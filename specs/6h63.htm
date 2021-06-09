@@ -1,0 +1,611 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>L&amp;I CODE ADMINISTRATION MANAGER</title>
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	font-weight:normal;
+	text-decoration:underline;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	font-weight:normal;
+	text-decoration:underline;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:0in;
+	margin-right:4.5pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:5.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:.5in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	font-weight:normal;
+	text-decoration:underline;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.5in;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{mso-style-link:"Body Text 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers (W1)",sans-serif;
+	text-decoration:underline;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Univers (W1)",sans-serif;
+	text-decoration:underline;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Univers (W1)",sans-serif;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Univers (W1)",sans-serif;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Univers (W1)",sans-serif;
+	text-decoration:underline;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Univers (W1)",sans-serif;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-link:"Body Text Indent";
+	font-family:"Univers (W1)",sans-serif;}
+span.BodyText3Char
+	{mso-style-name:"Body Text 3 Char";
+	mso-style-link:"Body Text 3";
+	font-family:"Univers (W1)",sans-serif;}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Univers (W1)",sans-serif;}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Univers (W1)",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<h5><span style='font-family:"Arial",sans-serif'>6H63</span></h5>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>PAY RANGE: N23</span></p>
+
+<h6 style='margin-left:2.5in;text-align:justify'><span style='font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></h6>
+
+<h6 style='margin-left:0in;text-indent:0in'><span style='font-family:"Arial",sans-serif'>L&amp;I
+CODE ADMINISTRATION MANAGER</span></h6>
+
+<p class=MsoNormal style='margin-left:1.5in;text-align:justify;text-indent:
+.5in'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<h3><span style='font-family:"Arial",sans-serif'>GENERAL DEFINITION</span></h3>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:40.5pt'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>This is administrative
+code enforcement work directing, through subordinate supervisors, a major
+section of the City's overall licensing and inspection program. </span></p>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:40.5pt'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Employees in this class
+establish goals and priorities, participate in program development and
+formulation, evaluate programs and supervise the activities of a major section
+responsible for citywide compliance and enforcement of the respective code
+(s).  Supervising, through subordinate supervisors, the activities of the
+section and communicating with representatives of governmental professional and
+community groups and the general public are of major significance to the work. 
+Work is performed under the direction of an administrative superior.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>ALLOCATING FACTORS:</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> (The following
+conditions must be met for a position to </span></p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>be allocated to this
+class.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>1. The position must
+direct a major section of the City's overall licensing and inspection program
+through subordinate supervisors.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>2.  The work must be
+performed in the Department of Licenses and Inspections.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>TYPICAL EXAMPLES OF WORK </span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>(ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Directs, through
+subordinate supervisors, the activities of a major section within the city's
+licensing and inspection agency; plans, assigns, reviews, and coordinates the
+work of an administrative and technical staff engaged in code compliance,
+inspectional and/or enforcement activities; plans, develops and establishes
+practices and procedures for code functions assigned; coordinates the
+implementation of current and proposed programs.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Participates in the
+formulation and development of departmental policy as it applies to respective
+code functions; discusses policy decisions, interpretations, and practical
+applications with higher level officials; reviews ordinance and code proposals
+for clarity, enforceability, inconsistencies, and conflicts in standards and
+practices, and practices, and practical application, confers with appropriate
+officials in the development, application, and revision of code(s); discuss
+proposed changes in legislation or codes with appropriate City officials.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Establishes priorities,
+quantity and quality of activities desired, and resources required to
+accomplish objectives; discusses and reviews status of operations,
+productivity, and problems encountered with subordinate supervisors; develops,
+modifies and implements procedures to increase operating efficiency and
+expedite work flow; monitors activities to determine effectiveness and
+achievement of desired results.</span></p>
+
+<p class=MsoBodyTextIndent3><span style='font-family:"Arial",sans-serif'>Monitors
+the technical activities of staff; reviews activity and inspectional reports
+for type of violations, timeliness and probity of actions and problems, spot
+checks work-performed; resolves most complex technical problems; approves
+compliance extensions or other cessations of operations.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Explains nature and
+extent of code requirements and violations; confers with appropriate parties
+for interpretation of code regulations and requirements; represents and
+testifies for the department at board and court hearings, lectures groups on
+code requirements and interpretations, discusses activities and problems with
+contractors, business representatives, community groups and the public;
+researches past practices and applicable ordinances; prepares appropriate
+statistical and narrative reports on activities.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Performs related work
+as required.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>REQUIRED KNOWLEDGE, SKILLS AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>KNOWLEDGE OF:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+principles and practices of public administration as they relate to a broad
+program of code interpretation and administration</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+laws, ordinances and departmental policies pertaining to the enforcement of
+licensing and inspection codes </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>supervisory
+methods and techniques</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>administrative
+and management practices and procedures </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+philosophy, principles and purposes of licensing and inspection ordinances and
+codes</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+procedures and practices of operational and supportive units integrated within
+the City’s comprehensive code enforcement</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+procedures utilized in the prosecution of violations of licensing and codes,
+ordinances, and statutes</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>report
+writing principles and techniques</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>uses
+of personal computers and software applications commonly used in offices</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>                                                            </span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>SKILL IN:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>evaluating
+the effectiveness of administrative functions and service programs and
+implementing changes to provide for more effective and efficient operations</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>dealing
+with the public affected by City codes, regulations, ordinances and    
+administration.</span></p>
+
+<p class=MsoNormal style='margin-left:3.0pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'> <u>ABILITY TO:</u></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>plan,
+assign, analyze and review the work of a technical and clerical staff          
+engaged in compliance, inspectional and<i>/</i>or enforcement activities </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>interpret,
+analyze and explain the provisions, scope, and parameters of municipal
+licensing and inspectional codes and elated ordinances</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>reach
+and implement decisions firmly, tactfully, and impartially express and present
+ideas effectively, both orally and in writing</span></p>
+
+<p class=MsoBodyText3 style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>establish
+and maintain effective working relationships with associates, representatives
+of private, professional, business, and community groups and the general public</span></p>
+
+<p class=MsoBodyText3 style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>develop
+policies, procedures and guidelines governing administrative processes                                                               </span></p>
+
+<p class=MsoBodyText3><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>MINUMUM
+ACCEPTABLE TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'> (The following statement represents the
+minimum training and experience standards, which will be used to admit or
+reject applicants for tests.  Applications submitted by candidates for this
+class will be reviewed based on training and experience requirements as
+approved on 10/20.)</span></p>
+
+<p class=MsoBodyText3><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyText3><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>EDUCATION:</span></u></p>
+
+<p class=MsoBodyText3><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Completion of a
+bachelor's degree program at an accredited college or university.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>OR</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Completion of the
+Master Code Professional certification by the International Code Council (ICC)
+AND completion of 60 credits at an accredited college or university.</span></p>
+
+<p class=MsoBodyText3><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h3><span style='font-family:"Arial",sans-serif'>AND</span></h3>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>SPECIFIC EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>: </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Two years of experience
+in any of the following classes:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>    </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>L&amp;I
+Code Administration Supervisor (6H62)</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>Construction
+Plans Review Specialist (6H25)</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>L&amp;I
+Construction Compliance Supervisor (6H45)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>NOTE: 
+Employees with permanent Civil Service status as of September 1, 2020 as an Administrative
+Specialist 2 (2L32) in the Department of Licenses and Inspections may qualify
+if they meet the above listed minimum education and experience requirements.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>OR</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Any equivalent
+combination of education or experience determined to be acceptable by the Office
+of Human Resources that has included the specific experience and two years of
+coursework (60 credits) from an accredited college or university and the Master
+Code Professional certification as an educational minimum.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>PHYSICAL AND MEDICAL
+REQUIREMENTS: </span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyTextIndent2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>Ability
+to physically perform the duties and to work in the environmental conditions
+required of a position in the class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Class Established</span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> 10/74</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Spec Revision:</span></b></p>
+
+<h4><span style='font-family:"Arial",sans-serif'>CSC - 8/99</span></h4>
+
+<h4>Ad. Board - 9/99</h4>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Change in Title:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC – 3/12</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>Ad. Board – 4/12</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> Spec. Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC-12/16</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>Ad. Board- 1/17</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Latest Spec. Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC: 09/20</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>Ad. Board: 10/20</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>SA</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

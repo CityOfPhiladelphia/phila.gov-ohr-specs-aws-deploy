@@ -1,0 +1,221 @@
+h1,h2,h3,h4, h5 {
+	text-transform: uppercase;
+}
+
+hr {
+	 width: 60%;
+	 margin-top: 1em;
+}
+.removebullet {
+	 list-style-type: none;
+	 padding: 0;
+	 margin: 0;
+}
+.nobreak {
+	display: inline;
+}
+h4.nobreak {
+	margin-top: 5em;
+}
+h5.nobreak {
+	margin-top: 5em;
+	margin-right: 2em;
+}
+
+div#container {
+	margin: 0 .25em 0 .25em;
+	padding: 0 .25em 0 .25em;
+}
+
+
+div#header, div#footer {
+	text-align:center;
+}
+div#header hr, div#footer hr {
+	margin-top: 0;
+	width: 100%;
+}
+div#header h3, div#header h1, div#header h4 {
+	margin-bottom: 0pt;
+}
+div#header h1 {
+	margin-bottom: 0pt;
+}
+div#header h2 {
+	margin-top: 0pt;
+}
+div#header h1, div#header h2 {
+	font-size: 25pt;
+}
+div#header div {
+	margin-bottom: 1em;
+	margin-left: auto; 
+	margin-right: auto;
+	overflow: hidden;
+	width:800px;
+	text-align: center;
+}
+
+div#header ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+div#header ol li {
+	display: inline;
+}
+div#header li {
+	border-left: 1px solid #000;
+	line-height: 1.1em;
+	margin: 0 .5em 0 -.5em;
+	padding: 0 .5em 0 .5em;
+}
+div#header li:first-child {
+	border-left: 0px solid #fff;
+}
+
+
+
+
+
+
+div#gen_definition h2 {
+	text-align:center;
+	font-size: 15pt;
+}
+div#gen_definition h3 {
+	display: inline;
+	font-size: 13pt;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+div#gen_definition ul.removebullet {
+	margin-bottom: 1em;
+}
+div#gen_definition ul.removebullet li {
+	text-indent: 20pt;
+}
+div#gen_definition ul.removebullet li {
+	margin: .25em .3em .25em .25em; 
+	padding: .25em .3em .25em .25em; 
+}
+div#gen_definition ul {
+	margin-left: 12px;
+	margin-top: 0;
+}
+div#gen_definition ul li{
+	margin-left: 4em;
+}
+div#gen_definition ol {
+	margin-left: 12px;
+	margin-top: 0;
+}
+div#gen_definition ol li{
+	margin-left: 4em;
+}
+
+
+
+
+
+div#examples_of_work h2 {
+	text-align: center;
+	font-size: 15pt;
+}
+div#examples_of_work h3 {
+	display: inline;
+	font-size: 12pt;
+}
+div#examples_of_work h4 {
+	display: inline;
+	font-size: 12pt;
+	margin-left: 4.4em;
+}
+div#examples_of_work ul {
+	 list-style-type: none;
+	 padding: 0;
+	 margin: 0;
+}
+div#examples_of_work ul li {
+	margin: .5em .3em .25em 1em; 
+	padding: .5em .3em .25em 1em;
+	text-indent: 20pt;
+}
+
+div#examples_of_work ul ul li {
+	margin: .5em .3em .25em 3.5em; 
+	padding: .5em .3em .25em 3.5em; 
+}
+
+
+
+
+
+
+div#ksa h2 {
+	text-align: center;
+	font-size: 15pt;
+}
+div#ksa h3 {
+	display: inline;
+	font-size: 12pt;
+}
+
+
+
+
+
+
+
+div#minimun_training_experience h2 {
+	text-align: center;
+	font-size: 15pt;
+	margin-bottom: 0;
+}
+div#minimun_training_experience h3 {
+	font-size: 12pt;
+	text-transform: none;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 12em 0 12em;
+}
+div#minimun_training_experience h4 {
+	font-size: 12pt;
+	margin: 0 2em .5em 2em;
+}
+
+div#minimun_training_experience ul {
+	list-style-type: none;
+	margin:0 2em 1em 2em;
+}
+div#minimun_training_experience h5 {
+	font-size: 12pt;
+}
+div#minimun_training_experience div {
+	margin: 2em 0 2em 0;
+}
+
+
+
+div#payrange_history h3 {
+	display: inline;
+	font-size: 12pt;
+}
+
+div#payrange_history h4 {
+	margin-bottom: 0;
+}
+
+div#payrange_history ul {
+	list-style-type: none;
+	margin-bottom: .5em;
+} 
+
+
+
+
+div#footer h3 {
+	margin-top: 0;
+	
+}

@@ -1,0 +1,877 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>PAYROLL MANAGER</title>
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Univers \(W1\)";}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;
+	font-weight:normal;
+	text-decoration:underline;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;
+	font-weight:normal;
+	text-decoration:underline;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;
+	text-decoration:underline;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Univers \(W1\)";
+	letter-spacing:-.1pt;
+	text-decoration:underline;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>2A35 </span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>     PAY RANGE: N23
+</span></p>
+
+<p class=MsoHeader align=center style='text-align:center'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoHeader align=center style='text-align:center'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PAYROLL
+MANAGER </span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+This is managerial level work directing through a subordinate assistant
+manager, the examination and verification of all payroll deductions and wages
+paid to employees in all departments and agencies of the City. Work includes
+overseeing the preparation of payments to health insurance agencies and
+employee unions, contact with departmental representatives to explain policies
+governing payrolls and to resolve complex problems regarding payroll
+transactions.&nbsp; Interacting with departmental accounting officials and
+information technology personnel from the City’s central technology department
+is&nbsp;significant to the work. Work is performed under the supervision of the
+Payroll Director.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>ALLOCATING FACTORS</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:&nbsp;(The following conditions
+must be met for a position to be allocated to this class.)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-align:justify;
+text-indent:-.25in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>The employee must manage the timely and accurate
+processing of city-wide payrolls and payments to providers of employee
+benefits.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-align:justify;
+text-indent:-.25in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Work must be performed within the Payroll unit of the
+Central Finance Department.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-align:justify;
+text-indent:-.25in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>The position must direct payroll staff through a
+subordinate Payroll Assistant Manager.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>
+(ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Directs the work of a group of payroll examiners and manages through the Payroll
+Assistant Manager the review and verification of data in the City's payroll
+system; resolves complex problems arising during payroll processing, including interpreting
+and appropriately applying a multitude of complex rules and regulations to
+ensure accurate employee pay; manages the processing of payrolls in a timely
+manner with the City's data processing operations; checks constantly to see
+that deadlines are being met; reviews work during processing by spot checking
+computations; rechecks and finalizes completed payroll for overall accuracy.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Manages the initiation of payment for health and welfare plans covering City
+employees in accordance with existing policies and agreements; reviews and
+corrects the work of subordinates in preparing payments to vendors and City
+employee unions based upon computer-generated credit reports; reviews the
+adjustment of City credit report figures to conform to payroll corrections;
+oversees and reviews the reconciliation of vendor billings with City credit
+reports; </span><span lang=EN style='font-size:12.0pt;font-family:"Arial",sans-serif'>works
+closely with Central Budget and Accounting Team to correct overdraft errors
+that occur in the monthly Fringe Benefit cycle. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:.5in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Oversees the preparation
+of reports and statements detailing the amount to be withheld for all payroll
+deductions including pension payments, federal, state and local withholding taxes,
+and health insurance; supervises the maintenance of records relating to the pay
+status and deductions of all City employees; directs the preparation of special
+payrolls; re</span><span lang=EN style='font-size:12.0pt;font-family:"Arial",sans-serif'>views
+and resolves complex employee pension issues in concert with Board of Pensions
+and Finance Accounting Division.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:.5in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Reconciles errors in the
+monthly payments of health and welfare benefits for the city-administered
+benefit plan; adjusts funds to reconcile errors; maintains the computerized
+financial accounting systems (FAMIS) as it relates to the health and welfare benefits;
+collaborates with the central Information Technology office on the
+implementation of ongoing updates and changes to the payroll and employee
+benefits systems to ensure accurate payroll processing for all City employees;
+works closely with the Information Technology Office to advise, review and
+correct reports developed to test and ensure the proper implementation of
+pending wage increases, bonuses, pension changes, retroactive adjustments, and
+other payroll-related rule changes.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal style='text-align:left !msorm;text-indent:0in !msorm;
+margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>In cooperation with the Payroll Director, oversees the
+maintenance of the levy system of wage deductions for unpaid child support
+orders, taxes owed, student loan payments, rent owed, etc. to ensure deductions
+are made in compliance with local, state and federal regulations and that
+calculations include appropriate surcharges; provides direction to a clerical
+staff responsible for organizing, entering and verifying a large volume of data
+concerning Citywide accounting transactions, reviewing and resolving input
+errors, posting and processing adjustments to the City payroll and assembling
+financial data for easy input; revises existing procedures.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Oversees payments to life insurance providers, unions, escrow accounts, direct
+deposits to banks, deferred compensation providers, and other city administered
+plans; develops and implements policies, procedures, and methods for
+implementing and managing payments to these plans; oversees the conversion of
+manual payroll and benefit transaction processes to a computer automated
+system; collaborates with the Central Information Technology agency&nbsp;&nbsp;
+to determine and establish capabilities, needs or processes of payroll and
+benefit transactions and processing and transfer to an automated system.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Collaborates with and advises departmental officials concerning procedures to
+be used in preparing and posting departmental payroll; interprets Civil Service
+regulations, Administrative Board rules and Standard Accounting Procedures
+(SAPs) governing payroll and concerning such matters as sick leave and vacation
+time, as well as complex and varied overtime rules for all City employees;
+interprets changing regulations as they apply to pay; determines policies and
+procedures for administering those changes; coordinates, participates in, and
+chairs meetings with departments and central agencies and others to coordinate
+and facilitate payroll processes (e.g. Labor Relations, Risk Management, Office
+of Human Resources, Office of Information and Technology, Health and Welfare
+vendors); provides formal training to City departments and agencies on the use
+of the payroll, time records, and employee attendance systems to ensure proper
+processing and implementation of all citywide payroll policies and procedures;
+trains departmental payroll and human resources staff on the generation, use
+and analysis of payroll system reports.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Receives all arbitration awards from the Payroll Director and determines method
+for calculating and administering award and coordinates assignments for
+implementation.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Assists agency officials in the development of processes necessary for new
+payrolls; advises officials on the proper implementation of new and revised
+payroll procedures; advises City officials regarding the impact of changes in
+the payroll, personnel, pensions and benefits systems on the payroll
+preparation process.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Performs related work as required.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>REQUIRED KNOWLEDGE, SKILLS AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>KNOWLEDGE OF</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the regulations, policies, Administrative Board rules, Standard
+Accounting Procedures (SAPs) and other procedures relating to the processing of
+payrolls, including complex overtime and pay differential rules related to all
+classes of employees</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Civil Service Regulations relating to the processing of
+payrolls</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>labor contracts and arbitration awards relating to the
+processing of payrolls and employee benefits</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>accounting principles, practices and procedures</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the principles and practices of governmental accounting</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the computerized accounting database utilized by a large
+municipality including file structure, data entry methods, data processing
+hierarchy, and data retrieval capabilities</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>managerial principles and techniques</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-40.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>business arithmetic</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+.0001pt;text-align:justify;text-indent:-.5in;line-height:normal'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>computerized office equipment used in processing and
+checking payrolls</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+.0001pt;text-align:justify;text-indent:-.5in;line-height:normal'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>regulations, policies, and procedures relating to
+employee benefit options and making payments for the provision of employee
+benefits</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:justify;text-indent:-.5in;line-height:normal'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the applications and capabilities of&nbsp;computers and
+relevant software as they relate to city payroll transactions and recordkeeping</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>SKILL IN:</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>analyzing and evaluating proficiency and work flow</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol;letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>preparing and interpreting a variety of financial reports
+and statements</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol;letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>establishing and maintaining effective working
+relationships with associates and  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;text-indent:-31.5pt;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>            departmental representatives</span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-31.5pt;line-height:normal'><span style='font-size:12.0pt;font-family:Symbol;
+letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>management of employees performing payroll operations</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>ABILITY TO</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>explain civil service regulations and personnel
+department and finance department policies to departmental officials</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>prepare clear and concise reports</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>meet deadlines consistently</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>resolve complex problems related to the processing of
+deductions and wages</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>establish and maintain effective working relationships
+with departmental officials and associates</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.5pt;margin-bottom:.0001pt;text-align:justify;
+text-indent:-31.5pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>utilize a personal computer in the maintenance of payroll
+transactions</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>MINIMUM ACCEPTABLE TRAINING AND EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;(The
+following statement represents the minimum training and experience standards
+which will be used to admit or reject applicants for tests.&nbsp; Applications
+submitted by candidates for this class will be reviewed based on training and
+experience requirements as approved on 4/19.)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>EDUCATION</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Completion of a bachelor’s degree in accounting at an accredited college or
+university. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>EXPERIENCE</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Option 1: Finance Department</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:.5in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>One year of experience as
+a Payroll Assistant Manager</span><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif'> or three years of experience as a Payroll Supervisor
+directing the activities of a staff engaged in the examination and verification
+of payroll deductions and wages paid to employees in all departments of the
+City.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:.5in;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>OR</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Option 2: Other City Departments</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Four years of experience as an Administrative Officer, </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:black'>supervising
+the provision of administrative services for a large City department (750+
+employees) with a complex payroll operation, which has included responsibility
+for supervising payroll functions. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>OR</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Option 3: Other Payroll Experience</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>Ten years
+of experience in payroll preparation, which has included eight years of <span
+style='color:black'>progressively responsible supervisory payroll experience in
+a large government or private agency.</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;page-break-after:avoid;layout-grid-mode:char'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OR
+</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Any equivalent combination of education and experience determined to be
+acceptable by the Office of Human Resources that has included the experience
+described above.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>City of Philadelphia Classes That Typically Meet the
+Experience Requirements:</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Administrative Officer (2L20)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Payroll Supervisor (1B23)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Payroll Assistant Manager (2A34)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>PHYSICAL AND MEDICAL REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Ability to physically perform the duties and to work in the environmental
+conditions required of a position in this class.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal;page-break-after:avoid;layout-grid-mode:
+char'><b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Class Established:</span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal;page-break-after:avoid;layout-grid-mode:
+char'><b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Ad. Board - </span></b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>4/91</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Spec. Revision: CSC 08/09,
+Ad Board 09/09</span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Spec. Revision: </span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>CSC: </span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>12/13</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad Board: </span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>12/13</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Spec. Revision: </span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>CSC: </span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>4/14</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad Board: </span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>5/14</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Latest Spec. Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'>CSC – 3/19</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'>Ad. Board – 4/19</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>JL</span></p>
+
+</div>
+
+</body>
+
+</html>

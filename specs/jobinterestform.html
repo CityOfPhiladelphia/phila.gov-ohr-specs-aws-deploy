@@ -1,0 +1,352 @@
+<!--
+ * Description: Main Html template for Pjax.
+ * Created: December ‎07, ‎2016.
+ * Author: Hani Alqaffas - (Office of Human Resources  - City of Philadelphia)
+ * Template Version: 1.0.2
+ * Template Last update: June 11, 2018.
+ * WebPage Last generated: Monday, June 11, 2018 11:50 AM.
+ -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+         <!-- IMPORTANT NOTE ABOUT BASE TAG:
+          1) Insert base tag as first child of HEAD tag
+          2) MAKE SURE the URL (href)  ENDS WITH '/'
+          3) Use absolute url (FULL URL) or  relative url (part of url)
+         -->
+       <base href="/personnel/" target=""/>
+
+      <!-- meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Cache-control" content="public">
+
+      <meta name="robots" content=" follow, index ">
+        <!-- For Ajax -HTML snapshot [https://developers.google.com/webmasters/ajax-crawling/docs/specification] -->
+        <meta name="fragment" content="!">
+
+        <!-- Dynamic updated By pjax plugin. Use [ PjaxPlugin.SetMetaTag (name, content); ]-->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content=" Office of Human Resources  - City of Philadelphia"> <!--   Office of Human Resources  - City of Philadelphia  -->
+
+
+
+		<!-- Dynamic updated By pjax plugin. Use [ PjaxPlugin.SetTitleTag (ntitle); ]-->
+        <title>Phila.gov | Human Resources | Job Interest </title>
+
+    <script>
+
+      coreFilesOnErrorCounter=0;
+      coreFilesDetails="";
+
+      function CoreFileOnError(element)
+      {
+        console.log(element);
+        coreFilesDetails +="\t"+(++coreFilesOnErrorCounter)+") Could not load file: "+element.outerHTML+"\n";
+        coreFilesDetails +="\t   "+ ((element.src) ? "The full src is ["+element.src+"]." : "The full href is ["+element.href+"].")+"\n\r\n\r";
+      }
+
+      document.onreadystatechange = function()
+      {
+
+        if (document.readyState == "complete")
+        {
+
+          if(coreFilesOnErrorCounter>0)
+          {
+            console.log("\n\n");
+            console.log("##########################################################################################");
+            console.log("#                          ERROR: COULD NOT GENERATE THE WEBSITE                         #");
+            console.log("#                                 Below Are The Details                                  #");
+            console.log("##########################################################################################");
+
+             baseTag =  (document.getElementsByTagName("BASE")[0])? ("   "+document.getElementsByTagName("BASE")[0].outerHTML+ "\n\r   The full href is [" +document.getElementsByTagName("BASE")[0].href+"].") : "\t The HTML <base> Tag is undefind [not created]. You have to create the HTML <base> Tag.\n\r\t To learn more about  HTML <base> Tag  visit [https://www.w3schools.com/tags/tag_base.asp]";
+            console.log("A) Check the 'href' for <base> element.\n\r  ----------------------------------\n\r"+baseTag+"\n\r\n\r");
+            console.log("B) Could not load ["+coreFilesOnErrorCounter+"] CORE files:\n\r  ----------------------------------");
+            console.log (coreFilesDetails);
+            console.log("\n\r##########################################################################################");
+
+
+            html='<div>'
+            +'<center style="width: 100%; position: absolute; top:10%;"><br/>'
+            +'<img src="_pjaxApplication/core/_assets/img/logo/OHR-Banner-L.png?v=1.0.0" alt="error img" style="width: 100%;  max-width: 800px;"/><br/>'
+            +'<h1><strong style="color:red;"> Oops! Something went wrong . </strong></h1><h2 style="color:black;">Please try again later.</h2><a style="font-size:10px;" href="mailto:OHR.IT.Staff@Phila.gov?subject=Error%20-%20Office%20of%20Human%20Resources%20Website.&body=Please%20see%20the%20link%20below%0A'+window.location.href+'">Report this problem to support</a></p>'
+            +'</center>';
+            +'</div>';
+
+            //####################################################################################
+
+            // change background
+            document.getElementsByTagName("html")[0].style="height:100%; width: 100%; height:100%;";
+            // hide body element
+            document.getElementsByTagName("body")[0].style="visibility:hidden";
+
+            // create new element and insert it outside body element
+            newNode = document.createElement("div");
+            newNode.setAttribute("id", "loading-error");
+
+            newNode.innerHTML =html;
+            document.getElementsByTagName("html")[0].appendChild(newNode);
+          }
+        }
+      }
+
+    </script>
+
+    <!-- icon-->
+    <link rel="icon" href="_pjaxApplication/core/_assets/img/icons/favicon.ico?v=1.1.3" onerror="CoreFileOnError(this)">
+
+    <!--Core - main css files  -->
+    <link rel="stylesheet" type="text/css" href="_pjaxApplication/core/_assets/css/combined-css-core-files.css?v=4.1.3" onerror="CoreFileOnError(this)">
+
+    <!-- Core - main js files -->
+    <script src="_pjaxApplication/core/_assets/js/combined-js-core-files.js?v=4.1.3" onerror="CoreFileOnError(this)"></script>
+
+    <!-- add timestamp to not cache websiteConfiguration file -->
+    <script>document.write("<script src='_pjaxApplication/core/_assets/js/websiteConfiguration.js?v=" + Date.now() + "'><\/script>");</script>
+
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="_pjaxApplication/core/_assets/css/original-css-core-files/noscript.css?v=1.1.3">
+        <div id="noscript" class="alert alert-danger text-center" role="alert">
+             <span> For full functionality of this site it is necessary to enable JavaScript.</span>
+            <b class="text-muted">Here are the </b><b><a href="https://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in your web browser</a></b>.
+         </div>
+    </noscript>
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <header class="bg-primary text-white">
+      <!--container-fluid-->
+        <div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><ul class="list-inline city-links text-left"><li> <a class="link-1" href="http://www.phila.gov/" title="City of Philadelphia">Phila.Gov</a> &nbsp;&nbsp;<span class="span-1" aria-hidden="true"></span></li><li> <a class="link-2" href="http://www.phila.gov/mayor" title="Mayor's Office">Mayor's Office</a> &nbsp;&nbsp;<span class="span-2" aria-hidden="true"></span></li><li> <a class="link-3" href="http://www.phila.gov/citycouncil" title="City Council">City Council</a> &nbsp;&nbsp;<span class="span-3" aria-hidden="true"></span></li><li> <a class="link-4" href="http://www.phila.gov/business" title="Business Services">Business</a> &nbsp;&nbsp;<span class="span-4" aria-hidden="true"></span></li><li> <a class="link-5" href="http://www.phila.gov/Residents" title="Residents"> Residents</a> &nbsp;&nbsp;<span class="span-5" aria-hidden="true"></span></li><li> <a class="link-6" href="http://www.phila.gov/visitors" title="Leisure">Leisure</a> &nbsp;&nbsp;<span class="span-6" aria-hidden="true"></span></li><li> <a class="link-7" href="http://www.phila.gov/311" title="Philly311">Philly311</a> &nbsp;&nbsp;<span class="span-7" aria-hidden="true"></span></li></ul></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <a href="index.html" class=" text-center"> <img src="_pjaxApplication/widgets/_assets/img/logo/COP_OHR_banner.png?v=1.0.0" class="banner img-responsive tex-right" alt="The Office of Human Resources banner" title="The Office of Human Resources"> </a></div></div></div>
+    </header>
+
+     <!-- main-navbar -->
+    <nav id="main-navbar" class="navbar navbar-inverse bg-dark navbar-static-top">
+        <div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-menu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-menu-hamburger"> Menu</span> </button><ul class="nav navbar-nav navbar-center"><li><a class="navbar-brand pjax-link active" href="index.html" title="home"></a></li></ul></div><div class="collapse navbar-collapse center" id="bs-navbar-collapse-menu"><ul class="nav navbar-nav navbar-center"><li><a class="pjax-link" data-pjax-webpagetitle="" href="index.html">Home</a></li><li><a class="pjax-link" href="about.html">About</a></li><li class="dropdown"> <a href="Jobs.html" class="dropdown-toggle disabled pjax-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Jobs <span class="caret"></span></a><ul class="dropdown-menu"><li><a class="pjax-link" href="JobOpps.html">Job Opps</a></li><li><a class="pjax-link" href="specs/JobInterestForm.html">Job Interest</a></li><li><a class="pjax-link" href="Specs.html">Job Class Specs</a></li><li><a class="pjax-link" href="Payranges.html">Pay Ranges</a></li><li><a class="pjax-link" href="Codes.html">Union Codes</a></li><li><a class="pjax-link" href="Ladders.html">Career Ladders</a></li><li><a class="pjax-link" href="CivilServiceResidencyWaivers.html">Residency Waivers</a></li></ul></li><li class="dropdown"> <a href="Resources.html" class="dropdown-toggle disabled pjax-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span></a><ul class="dropdown-menu"><li><a class="pjax-link" href="CivilService.html">Civil Service Commission</a></li><li><a class="pjax-link" href="administrative.html">Administrative Board</a></li><li><a class="pjax-link" href="Labor.html">Labor Relations</a></li><li><a class="pjax-link" href="Pension.html">Pension Board</a></li><li><a class="pjax-link" href="Benefits.html">Employee Benefits</a></li><li><a class="pjax-link" href="EEO_AA.html">EEO/AA Unit</a></li><li><a class="pjax-link" href="Training.html">Employee Training</a></li></ul></li><li><a class="pjax-link" href="FAQs.html">FAQs</a></li><li><a class="pjax-link" href="Contact.html">Contact</a></li></ul></div></div></div></div>
+    </nav>
+
+
+
+    <section id="main-section">
+      <div class="container">
+        <div class="row">
+          <!-- pjax-views-container -->
+          <div  data-pjax="view-content" class="col-xs-12 col-sm-12  col-md-12 col-lg-12 well">
+              <!-- pjax view content  starts here-->
+			  		<link rel="stylesheet" href="_pjaxApplication/views/_assets/css/bootstrap-table/bootstrap-table.css?v=1.11.1" />
+<link rel="stylesheet" href="_pjaxApplication/views/_assets/css/bootstrap-table/extensions/bootstrap-table-filter-control.css?v=1.11.1" />
+<script src="_pjaxApplication/views/_assets/js/jobspecs-and-jobInterest.js?v=2.2.0"></script>
+
+
+<style type="text/css">
+    .quill {
+   /*     width: 15px;
+        height: 15px;
+        pointer-events: none;
+        cursor: default;*/
+    }
+    .linkJobTitle:hover {
+        /*cursor: pointer;  */
+    }
+
+   #jobInterestBlurb {
+        /*height: 282px; */
+     /*   margin: 5px 0px;
+        padding: 2px;
+        background-image: url("_pjaxApplication/views/_assets/img/blurb_bg.png");
+        color: #334d72;
+        text-align: center;*/
+    }
+
+    .jobInterest-header{
+      /*  color:#0F618F;
+        padding:5px;*/
+    }
+
+
+
+
+
+
+     /* view card*/
+    @media (max-width: 600px)
+    {
+        .card-view {
+            clear: both;
+        }
+        .card-view .title {
+            display: block;
+            width: 100%;
+            float: left;
+        }
+        .card-view .value {
+            display: block;
+            width: 100%;
+            float: right;
+        }
+    }
+
+
+
+
+
+</style>
+
+<title>Phila.gov | Human Resources | Job Interest </title>
+
+<div class="container-fluid">
+
+    <!-- to display Job Class Specifications -->
+    <div id="jobClassSpecificationsContainer" class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 class="webpage-title">Job Interest</h1>
+            <div class="blurb fieldDiv well" style="padding:10px;">
+
+                    <div id="jobInterestBlurb">
+                        <h3 class="jobInterest-header"><b>Job Interest Form</b></h3>
+                        <p class="jobInterest-context">See a Civil Service Job Class Specification listed but cannot find an open job announcement for it? Submit a job interest form to the City of Philadelphia, Office of Human  Resources and be notified when a specific job title is going to be announced. Search for the job class specification (job title) below and click on the (<img src="_pjaxApplication/views/_assets/img/quill.png" alt="quill" class="quill">) on the row of the job title you are interested in. This will take you to the Job Interest Form. There you can fill out contact information and be notified via email when the City of Philadelphia is announcing that specific job title.</p>
+
+    					 <h3 class="jobInterest-header disclaimer">
+    					     <b>Disclaimer</b>
+                         </h3>
+    					<p class="jobInterest-context  disclaimer-text">
+    					    <em>
+    						    The City of Philadelphia will attempt to contact you via e mail when this job opportunity is open for applications, however the City assumes no liability for misdirected email, undelivered email flagged as spam or other email delivery problems or issues. Job postings are updated every two weeks and potential candidates are encouraged to visit our website frequently to see if a particular job posting is open for applications.
+                          </em>
+                    </p>
+
+    				</div>
+            </div>
+        </div>
+
+        <widget path="charts/JobInterest/HorizontalBarChart.html" name="JobInterest-HorizontalBarChart" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="msgSuccessOrErrorBox">
+
+                <!-- <div class="alert alert-success alert-dismissable"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Success!</strong> Thank you for submitting and completing the Job Interest Form for <strong> 666</strong>.</div>-->
+
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table
+
+                    id="jobClassSpec"
+                    class="table-striped ajax-loading-1"
+                    data-card-view="false"
+                    data-show-toggle="false"
+                    data-pagination="true"
+                    data-search="true"
+                    data-sort-name="jobClassSpecs.jobClassCode"
+                    data-sort-order="asc"
+                    data-smart-display="true"
+
+                    data-mobile-responsive="true"
+                 >
+                 <thead>
+
+                        <tr>
+                            <th data-field="jobClassSpecs.jobClassCode" data-sortable="true" data-formatter="JobClassCodeFunction">Class <br/>Code</th>
+                            <th data-field="jobClassSpecs.jobClassTitle" data-sortable="true">Class <br/>Title</th>
+                            <th data-field="jobClassSpecs.jobClassSalaryMin" data-sortable="true" data-sorter="SalarySorterFunction">Salary <br/>Min.</th>
+                            <th data-field="jobClassSpecs.jobClassSalaryMax" data-sortable="true" data-sorter="SalarySorterFunction">Salary<br/> Max.</th>
+                            <th data-field="jobClassSpecs.jobInterest" data-formatter="JobInterestFunction"></th>
+
+                        </tr>
+                    </thead>
+                </table>
+       </div>
+
+
+
+
+    </div>
+
+<!-- to display JInterest Form  -->
+    <div id="JInterestFormContainer" class="row" style="display: none;">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 class="webpage-title"> Job Interest Form</h1>
+
+            <!-- InstanceBeginEditable name="contentLeft" -->
+            <p>You have displayed an interest in applying for a <strong><span id="jobTitle"></span></strong> position with the City of Philadelphia. An active job announcement for this particular position may not be available at this time. When a job announcement is available for this position the City of Philadelphia can contact you if you provide the information below.</p>
+            <h2>Contact Information</h2>
+            <script type="text/javascript">var submitted=false;</script>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload='if(submitted) {OnSubmitJobInterestForm()}'></iframe>
+
+                <!--<form  id="JInterestForm" class="form-inline"   action="https://docs.google.com/forms/d/1yKKg4gTtbsrG2JmQZj1NycGOBG2OTRjR8vVsUmUIkQc/formResponse" method="post" target="hidden_iframe" accept-charset="UTF-8" onsubmit="return validateForm();" >-->
+                <form  id="JInterestForm" class="form-inline"   action="https://docs.google.com/forms/d/e/1FAIpQLSeAxchni7XWLYhfa7zM8OEnhru0mIXxxYUWHDfLylEV8qTNIw/formResponse" method="post" target="hidden_iframe" accept-charset="UTF-8" onsubmit="return validateForm();" >
+
+                    <input id="appTime" type="hidden" placeholder="Time" />
+                    <input id="appMonth" type="hidden" name="entry.1997475001_month" placeholder="Month" />
+                    <input id="appDate" type="hidden" name="entry.1997475001_day" placeholder="Day" />
+                    <input id="appYear" type="hidden" name="entry.1997475001_year" placeholder="Year" />
+                    <input id="appHour" type="hidden" name="entry.1997475001_hour" placeholder="Hour" />
+                    <input id="appMinutes" type="hidden" name="entry.1997475001_minute" placeholder="Minutes" />
+
+                    <input id="appJCCode" type="hidden" name="entry.1065046570" placeholder="Class Code" data-error="#errNm1" />
+                    <input id="appJCTitle" type="hidden" name="entry.306474591" placeholder="Job Title"/>
+
+
+                    <div class="form-group">
+                        <!--<label class=" control-label" for="FirstName">First Name:</label> -->
+                        <input id="appFName" class="form-control" type="text" name="entry.2005620554" placeholder="First Name" data-error="#errNm1" />
+                    </div>
+                    <div class="form-group">
+                        <!--<label class="control-label"   for="mi">MI:</label>  -->
+                        <input id="appMInitial" class="form-control" type="text" name="entry.6117614" placeholder="MI" maxlength="1" />
+                    </div>
+                    <div class="form-group">
+                        <!--<label class="control-label"  for="LastName">Last Name:</label> -->
+                        <input id="appLName" class="form-control" type="text" name="entry.1051716463" placeholder="Last Name" data-error="#errNm1" />
+                    </div>
+                    <div class="form-group">
+                        <!--<label class="control-label"  for="Email">Email:</label> -->
+                        <input id="appEmail" class="form-control" type="email" name="entry.1045781291" placeholder="Email" data-error="#errNm1" />
+                    </div>
+                    <div class="form-group">
+                       <!-- <label  class="control-label"  for="ConfirmationEmail">Confirmation Email:</label>  -->
+                        <input id="appConfirmEmail" class="form-control" type="email"  name="" placeholder="Confirmation Email" data-error="#errNm1" />
+                    </div>
+
+                    <div class="clear"></div>
+                    <br />
+
+                    <input id="btnSubmit"  class="btn btn-primary" type="submit" value="Submit" />
+                    <input id="btnReset" class="btn btn-info" type="button" value="Clear Form" />
+
+                    <input id="btnCancel" class="btn btn-info" type="button" value="Go back to Job Class Specifications"/>
+
+                </form>
+        </div>
+    </div>
+
+</div>
+
+			  <!-- pjax view content  ends here-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container"><div class="row footer-row"><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Contact OHR</h3><ul class="list-unstyled"><li><a href="Contact.html" class="pjax-link text-info">Contact page</a></li><li><label>Email:</label> <a href="mailto:hrhelpdesk@phila.gov" class="pjax-link text-info">hrhelpdesk@phila.gov</a></li><li><label>Phone:</label> 215-686-0880</li></ul></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Quick Links</h3><ul class="list-unstyled"><li><a href="about.html" class="pjax-link text-info">About</a></li><li><a href="Contact.html" class="pjax-link text-info">Contact page</a></li><li><a href="FAQs.html" class="pjax-link text-info">FAQs</a></li><li><a href="https://phila.peopleadmin.com/login" class="text-info" target="_blank">Login</a> / <a href="https://phila.peopleadmin.com/user/new" class="text-info" target="_blank"> Create Account</a></li><li><a href="jobs/CivilServiceJobOpps.html" class="pjax-link text-info">Civil Service Job Opportunities</a></li><li><a href="Jobs/NonCivilServiceJobOpps.html" class="pjax-link text-info">Non-Civil Service Job Opportunities</a></li><li><a href="specs/JobInterestForm.html" class="pjax-link text-info">Job Interest Notifications</a></li></ul></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Mission Statement</h3><p class="text-info">The Office of Human Resources works with all agencies of the City government to recruit, develop and retain a qualified and diverse workforce.</p></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3" ><div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left"><h3 class="text-muted">Connect with OHR</h3><div class="social-media-links"><a target="_blank" href="https://www.facebook.com/CityofPhiladelphiaJOBS" class="iconFacebook" title="Facebook"> <span class="fa-stack fa-lg "> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="https://twitter.com/PHLCityJobs" class="iconTwitter" title="Twitter"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="https://ohrphila.wordpress.com/" class="iconWordpress" title="Wordpress"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="http://www.linkedin.com/pub/city-of-philadelphia-jobs/7a/3a0/710/" class="iconLinkedin" title="Linkedin"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x "></i> <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a></div></div></div></div></div></div></div>
+    </footer>
+
+
+
+  </body>
+</html>

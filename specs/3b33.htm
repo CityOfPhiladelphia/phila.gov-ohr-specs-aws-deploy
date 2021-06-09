@@ -1,0 +1,511 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>TRAFFIC ENGINEER</title>
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;
+	font-weight:normal;
+	text-decoration:underline;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Courier;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;
+	text-decoration:underline;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;
+	text-decoration:underline;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.15pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:Courier;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:Courier;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>3B33</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>PAY RANGE: N25</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>TRAFFIC ENGINEER</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            This is administrative traffic engineering
+work directing a major phase of the city's overall traffic engineering program.
+Significant aspects of the work include supervising, through subordinate
+engineering supervisors, and coordinating either the planning, investigation,
+analysis or the traffic signal and sign shop activities in a manner that ensures
+meeting program goals.  Work is performed under the general direction of an
+administrative superior.  Assignments require analytical thinking and are
+carried out in accordance with functional precedents, practices and policies.
+An employee in this class has controlling responsibility for a major phase of
+the overall traffic control program.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><u><span style='font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALLOCATING
+FACTORS</span></u><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.1pt'>:&nbsp;(The following conditions must be met for a position to be
+allocated to this class.)</span></p>
+
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.5in;
+text-autospace:none'><span style='font-family:"Arial",sans-serif;color:black'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Positions
+must perform the work in the Streets Department.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.5in;
+text-autospace:none'><span style='font-family:"Arial",sans-serif;color:black'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;color:black'>Positions
+must direct a major phase of the City's traffic and street lighting program.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> (ILLUSTRATIVE
+ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Plans, assigns, supervises, and coordinates
+the activities of a staff of lower level engineers engaged in collecting and
+validating a wide range of traffic engineering data, pertaining to the
+planning, analysis and implementation of the use of the overall traffic engineering
+program.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Develops and selects the location and design
+of traffic signs and signals; investigates traffic complaints of the general
+public and takes necessary follow up actions; develops traffic control
+features.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Supervises the requisitioning of materials
+and supplies, the preparation of budget estimates and the preparation of
+specifications for traffic engineering devices and equipment.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Confers with police and public officials on
+traffic operational problems; speaks before community and other types of
+citizen's groups on traffic problems.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Appears in court and before public utility
+commission as an expert witness on traffic engineering matters.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Performs related work as required.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>REQUIRED KNOWLEDGE, SKILLS AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>KNOWLEDGE OF</span></u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           the
+principles, practices and objectives of traffic engineering</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           the
+techniques and procedures involved in investigating and analyzing traffic and
+parking conditions</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           traffic
+safety and traffic control measures</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           the
+design, operation and use of traffic control devices</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           techniques
+used in electronic data processing</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           supervisory
+methods and techniques</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>ABILITY TO</span></u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           plan,
+coordinate and supervise the work of a moderately sized staff engaged in
+gathering, analyzing, mapping and filing traffic control data</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           express
+ideas clearly and concisely, orally and in writing</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>•           establish
+and maintain effective working relationships with associates and the general
+public</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>MINIMUM ACCEPTABLE TRAINING AND EXPERIENCE</span></u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> (The following
+statement represents the minimum training and experience standards which will
+be used to admit or reject applicants for tests.  Applications submitted by
+candidates for this class will be reviewed based on training and experience
+requirements as approved on 3/19.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>EDUCATION</span></u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>            Completion
+of a bachelor's degree program at an accredited college or university with
+major course work in civil or electrical engineering.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>GENERAL EXPERIENCE</span></u><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Four years of civil or electrical engineering
+experience, two years of which has been at the full performance level in
+municipal traffic engineering.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>SPECIFIC EXPERIENCE:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Two years of traffic engineering experience
+at the first supervisory level.</span></p>
+
+<h2><span style='font-family:"Arial",sans-serif'><span style='text-decoration:
+ none'>&nbsp;</span></span></h2>
+
+<h2><span style='font-family:"Arial",sans-serif'>OR </span></h2>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Any equivalent combination of acceptable
+training and experience which has included completion of a bachelor's degree in
+engineering and the Specific Experience.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>CITY OF PHILADELPHIA CLASSES THAT TYPICALLY MEET THE
+SPECIFIC EXPERIENCE REQUIREMENTS:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>Traffic District Engineer (3B32)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>PHYSICAL AND MEDICAL REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Ability to physically perform the duties and
+to work in the environmental conditions required of a position in this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='text-decoration:
+none !msorm'><u><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>LICENSES, REGISTRATIONS, AND/OR CERTIFICATES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>            Possession of a valid proper class motor
+vehicle operator's license as issued by the Commonwealth of Pennsylvania prior
+to appointment and during tenure of employment as a Traffic Engineer.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><a
+name="_Hlk536113603"></a><a name="_Hlk536113790"></a><a name=build><span
+style='font-family:"Arial",sans-serif'>Registration as a Professional Engineer
+with the Pennsylvania State Registration Board for Professional Engineers </span></a><span
+style='font-family:"Arial",sans-serif'>if required by work assignment</span><span
+style='font-family:"Arial",sans-serif;color:black'>. </span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Class Established</span></b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> 2/55</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Spec. Revision</span></b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>:</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC – 8/13</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>Ad. Board - 9/13</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Latest Spec.
+Revision</span></b><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.15pt'>:</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC – 2/19</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>Ad. Board – 3/19</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.15pt'>JJ</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1403 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>CITY PLANNER SUPERVISOR</title>
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"CG Times";}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	font-weight:normal;
+	text-decoration:underline;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	text-decoration:underline;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	layout-grid-mode:char;
+	font-size:11.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	text-decoration:underline;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	font-weight:bold;
+	text-decoration:underline;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"CG Times",serif;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"CG Times",serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>3E05</span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>PAY RANGE: N23**</span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoHeader align=center style='text-align:center'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>CITY PLANNER SUPERVISOR</span></u></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>  (Environmental Planning)</span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>(Planning)</span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>(Urban Design)</span></p>
+
+<p class=MsoHeader align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>(Airport)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>            This
+is supervisory planning work within the City’s central planning agency
+responsible for guiding the physical and environmental development of the city,
+or in a large operating department responsible for planning, developing, and
+implementing an aspect of the City’s environmental, or transportation
+programs.  Employees perform work in the Planning, Environmental Planning, Urban
+Design or Airport specialty.  An employee in this class, plans, assigns,
+reviews and coordinates the activities of lower level planners in the area of
+specialization.  Interacting with other agencies, community and business groups
+and individuals is significant to the work.  Work is performed under the
+direction of a higher-level city planner or administrative superior.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALLOCATING FACTORS</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>: (The
+following conditions must be met for a position to be allocated to this class.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Employees must perform supervisory city planning work in
+the area of specialization.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt !msorm'><span lang=EN
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Only</span></span><span
+style='font-size:10.0pt !msorm'><span lang=EN style='font-size:12.0pt;
+font-family:"Arial",sans-serif'> two </span></span><span style='font-size:10.0pt !msorm'><span
+lang=EN style='font-size:12.0pt;font-family:"Arial",sans-serif'>position</span></span><span
+style='font-size:10.0pt !msorm'><span lang=EN style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>s</span></span><span style='font-size:10.0pt !msorm'><span
+lang=EN style='font-size:12.0pt;font-family:"Arial",sans-serif'> will be
+allocated to the Airport Specialty</span></span><span lang=EN style='font-size:
+12.0pt;font-family:"Arial",sans-serif'> in the Department of Commerce Division
+of Aviation.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>
+(ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALL SPECIALTIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Plans,
+assigns, reviews and coordinates the work of lower level planners in the area
+of specialization; prepares performance reports for subordinate staff; assigns
+aspects of projects to subordinates; determines data required; directs the
+collection and analysis of data; reviews recommendations and proposals by
+subordinates and others; determines methods and procedures for study; develops
+guidelines and establishes priorities for subordinates; reviews work for adherence
+to planning standards.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Attends
+Commission, Council, inter-agency, and community meetings to recommend, develop
+and interpret planning programs; serves as a member of technical committees in
+area of specialization; interfaces with elected officials and the press as
+directed by the Executive Director or Commissioner.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>             Attends
+management and personnel training courses, as needed; assists higher level
+management by leading teams or staff committees to carry out projects and
+tasks; coordinates planners’ review of proposals needed for developer selection
+and ranking or comparison of competing projects; provides technical advice,
+assistance, and information to agencies, groups and individuals in the area of
+specialization.    </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Prepares
+performance reports for lower level staff and discusses performance issues;
+considers goals for future work and performance when evaluating employees;
+utilizes coaching methods and techniques, as necessary.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Performs
+related work as required.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PLANNING SPECIALTY</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>City Planning Commission
+Positions</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>All Assignments</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Supervises
+team of geographically-assigned staff; leads team staff meetings; prepares work
+program for staff unit in consultation with other agency managers. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Maintains the
+City’s comprehensive plan; prepares comprehensive, district, and neighborhood
+plans; works to implement projects recommended in plans; arranges neighborhood
+public commission meetings and participates in community-based planning
+processes. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Maintains
+working relationship with civic associations and community groups; prepares
+blight certification and redevelopment reports; reviews plans including
+redevelopment projects and urban renewal plans; gives oral presentations of
+projects and recommendations at monthly Commission meeting and other events;
+prepares grant applications and manages grant-funded studies performed by
+consultants; meets with staff of related agencies and organizations; participates
+in annual Capital Program process and meets with other departments to determine
+project funding priorities; p</span><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:black'>lans, analyzes, and coordinates transportation
+projects to ensure alignment with the capital budget and city-wide and Streets Department
+priorities.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Supervises GIS
+analysis and preparation of Flood Insurance Studies (FIS) map; uses Geographic
+Information Systems (GIS) mapping software to r</span><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>eview geographic data and graphics for
+the purpose of geographic planning projects.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Community and Strategic
+Planning Assignment </span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Acts as the
+principal planning representative and performs a wide range of planning
+services for an assigned City district comprised of a number of areas;
+supervises the preparation of comprehensive, neighborhood and district plans
+and generalized area plans; collaborates with other staff to utilize their
+expertise in the plan; directs the work of student interns; directs the
+interpretation of planning policy to community groups; develops strategies and
+methods for effective community participation in the planning process; </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Collects data
+and survey areas for mapping of data; analyzes information by preparing
+alternatives or by examining susceptibility to change, market studies, issues,
+trends, strengths, weaknesses, opportunities, threats or recent investment;
+formulates recommendations, strategies and implementation actions; </span><span
+style='font-size:12.0pt;font-family:"Helv",sans-serif;color:black'>prepares
+recommendations for disposition of property</span><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>; presents findings and
+recommendations at staff meetings, board meetings and community meetings; develops
+the nature and scope of detailed plans for major development projects; </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Develops an economic
+development program as it relates to unemployment, industry, development, land
+utilization, etc., and to capital investment and the general economy of the
+City.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Discusses and
+makes recommendations on urban design problems; analyzes physical, ecological,
+financial, and regional implications of proposals; determines neighborhood
+response to proposal; discusses design proposals and problems with public
+development agencies, and developers.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Provides
+technical assistance to community groups; solicits information from the
+community to establish priorities, determine problems and develop proposals;
+responds to community concerns by providing information on the purpose of
+specific programs and the City’s role in solutions to problems; guides the
+Commission and the community toward the development of compatible solutions to
+problems; attempts to resolve differences and effectuate compromise promise
+prior to presentation to the commission; informs the commission of the
+community’s opinion on issues and proposals; prepares and implements community
+outreach strategies for plans and projects.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Performs
+project management duties as assigned by the division director; manages the
+process for consultant studies; ranks and compares consultants in collaboration
+with other staff; works with administrative staff on contract review and
+approval; oversees and edits the work of consultants; assists with community
+outreach during the consultant study.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Development Planning and
+Zoning Assignment</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'> </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Develops studies
+of zoning planning activities; evaluates zoning proposals from business and
+community groups; researches and evaluates zoning plans of other cities;
+reviews councilmanic ordinances and zoning board cases for effect on zoning
+practices; makes recommendations for revision to the City zoning and planning
+codes.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Oversees the
+preparation and processing of changes to the official city plan; oversees
+updating of zoning maps; undertakes zoning remapping projects; serves as
+liaison with business associations and community groups for zoning projects. </span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></h2>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>Transportation Planning Assignment - Streets
+Department</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Directs the planning
+and programming of capital projects through the Regional Transportation
+Improvement Program and the capital budget; ensures compliance with the
+provisions of federal, state and local rules, regulations and guidelines.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>            Determines project needs and
+establishes priorities through internal coordination with project managers,
+engineers, budget officers, accountants, and attorneys and external
+coordination with city departments, community groups and non-profit
+organizations.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Oversees preparation
+and submission of funding obligations, reimbursement agreements and funding
+initiations; oversees all project costs to ensure reimbursement of all eligible
+project costs; establishes compliance with all funding requirements to ensure
+timely reimbursement for federal aid projects; prepares funding applications
+and project reports and audit documentation as needed.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Oversees Environmental
+Clearance process; ensures preparation and submission of appropriate
+documentation.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>ENVIRONMENTAL
+PLANNING SPECIALTY</span></h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Develops a
+specific aspect of the City's environmental management program such as urban
+development planning, waste management planning, and other areas relating to
+environmental issues, strategies and regulations; ensures compliance with the
+provisions of City, State, Federal and environmental rules, regulations and
+guidelines; establishes long and short range program goals and objectives.  </span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Develops
+environmental review guidelines for urban development projects; delineates
+areas of impact to be considered and level of assessment to be used; initiates
+preliminary environmental reviews during project planning stage; requests alternative
+methods of project implementation; suggests possible alternatives. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Directs the
+compilation of environmental review statements; assigns qualitative and
+quantitative levels of assessment; maintains current listings of administrative
+actions for which environmental impact statements are being or have been
+prepared; details areas of concern, assignments, progress of work and
+explanations of any delay.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>URBAN DESIGN SPECIALTY</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Supervises the
+preparation and testing of site and building controls and design guidelines for
+specific development parcels, development projects and special districts;
+reviews building designs, site plans, streetscapes and landscapes for
+conformance with zoning controls, development controls and design guidelines;
+reviews designs for public spaces including consideration of such factors as
+pedestrian usage, landscape standards, lighting, adjoining land uses,
+transportation linkages and access, signage and public art.</span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>            Prepares
+prospectuses and requests for proposals for individual development sites;
+prepares redevelopment strategies for neighborhoods and specific development
+districts including preparation of recommendations on land and other uses;
+directs the work of planning commission staff in the development of standards,
+controls, and guidelines for the design and development of public spaces such
+as streets, pedestrian spaces, plazas, transit access spaces, and other civic
+and public spaces; coordinates with developers, special interest groups,
+community groups and other City departments and agencies in this work.</span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>            Manages
+Civic Design Review of projects as required; presents findings to Civic Design
+Review Committee and Commission.</span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>AIRPORT
+SPECIALTY</span></u></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:black'>Supervises
+subordinate staff in the development of feasibility and environmental studies, <span
+style='display:none'>and </span>preparation, review and approval of designs,
+specifications and cost estimates for the Airport master plan; ensures planning
+work of staff complies with Federal Aviation Administration (FAA) regulations
+as they relate to airport sustainability.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:black'>            Directs and coordinates
+the activities of departmental staff and consultant architects, engineers, and
+planners; r</span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>eviews
+recommendations and proposals by subordinates; determines methods and
+procedures for study; assists in developing guidelines for studies and reviews
+work for adherence to planning standards; reviews and provides input to <span
+style='letter-spacing:-.1pt'>Geographic Information Systems (GIS) </span>data.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>            Supervises requests for the
+construction and/or renovation of Airport facilities through Airport planning
+division; directs and may prepare schematic design concepts; assigns and
+reviews preliminary and final designs, specifications and cost estimates;
+coordinates planning activities with engineering activities. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Supervises the
+design and implementation of projects such as runway repair and sidewalk
+construction; directs airport staff and consultants in preparing pre-design,
+design, bidding, and interfaces with outside contractors and tenants to ensure
+the completion and closeout of projects in a competent and timely manner. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Supervises staff
+in the development of comprehensive plans and programs for the utilization of
+the land, and development of physical space at Airport; confers with superior
+and other Airport stakeholders in assisting in developing planning strategies
+to increase airfield capacity as well as improve and expand existing airport
+facilities. </span></p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>REQUIRED KNOWLEDGE, SKILLS
+AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>KNOWLEDGE OF</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALL SPECIALTIES</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           best practices
+of supervising teams of subordinate staff</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+scope and objectives of city planning for a large metropolitan area</span></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>physical, social and economic structures of the city</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           city
+planning problems as they apply to the area of specialization</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+techniques and practices of planning research</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the techniques and practices of project planning</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the methods and techniques of planning analysis</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           geospatial
+analysis as a planning tool</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+application and interpretation of standard statistical measures</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+principles and practices of comprehensive city planning </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+principles and economic research methodologies </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+methods, practices, and objectives of zoning if required by assignment </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+legal concepts and legislation basic to planning</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+organization and function of municipal and other agencies active in the field
+of planning</span></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+principles, practices, and methods used in geospatial analysis</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ENVIRONMENTAL
+PLANNING SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+principles and methodology of environmental planning</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           environmental
+assessments and related mathematics and engineering concepts</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           environmental
+law and the sources of information concerning environmental impact </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           principles
+of environmental engineering as applied to the preparation and review of
+environmental impact statements </span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PLANNING SPECIALTY</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+principles and methodologies of community, neighborhood, and district planning</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+concepts and techniques of community relations and community outreach related
+to the planning process</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           strategies
+for civic engagement in the processes of redevelopment and urban renewal </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           federal,
+state and municipal funding requirements and programming practices for Streets
+Department positions</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>URBAN DESIGN SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>•           the principles and practices of urban design </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           zoning,
+site planning, architecture, land use and transportation planning,
+infrastructure planning and development, landscape and streetscape design, real
+estate economics and development financing, and signage and graphic design</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AIRPORT SPECIALTY</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:.15pt;margin-right:.15pt;
+margin-bottom:.15pt;margin-left:22.5pt;text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>    airport and aviation planning and design principles and standards </span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0in !msorm;margin-right:
+0in !msorm;margin-bottom:0in !msorm;margin-left:22.5pt !msorm;text-indent:-.5in !msorm;
+margin-top:.15pt;margin-right:.15pt;margin-bottom:.15pt;margin-left:22.5pt;
+text-align:justify;text-indent:-.25in'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>    federal aviation laws and regulations relating to
+Airport planning and development   </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SKILL IN:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALL SPECIALTIES</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:8.0pt;font-family:Symbol;
+letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Microsoft Office Suite</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:8.0pt;font-family:Symbol;
+letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>ArcGIS Product Suite </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:8.0pt;font-family:Symbol;
+letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Adobe Creative Suite </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:8.0pt;font-family:Symbol;
+letter-spacing:-.1pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>SketchUp and/or three-dimensional visualization software
+programs</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ABILITY TO</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ALL SPECIALTIES</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           plan,
+assign, review and supervise the work of a group of city planners</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           analyze
+and resolve complex city planning problems and make sound recommendations
+consistent with City policies</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>•           formulate solutions to planning problems,
+which are in adherence with accepted planning principles</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           present
+ideas effectively in oral, written, or graphic form</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           establish
+and maintain effective working relationships with associates, civic, community,
+and business groups, and the general public</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           interpret
+federal guidelines, regulations and standards as they apply to the area of
+specialization</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           graphically
+present planning concepts using traditional mapping, modeling and cartographic
+techniques as well as computer presentation drawing and presentation techniques
+common to the profession</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ENVIRONMENTAL
+PLANNING SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           determine
+those areas of the environment affected by specific urban development projects </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PLANNING
+SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify;layout-grid-mode:both;text-autospace:
+none'><span style='font-family:"Arial",sans-serif'>•           </span><span
+style='font-size:12.0pt;font-family:"Helv",sans-serif;color:black'>prepare
+plans and blight reports for districts and neighborhoods </span></p>
+
+<p class=MsoNormal style='text-align:justify;layout-grid-mode:both;text-autospace:
+none'><span style='font-family:"Arial",sans-serif'>•           </span><span
+style='font-size:12.0pt;font-family:"Helv",sans-serif;color:black'>review plans
+and proposals </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in;
+layout-grid-mode:both;text-autospace:none'><span style='font-family:"Arial",sans-serif'>•           </span><span
+style='font-size:12.0pt;font-family:"Helv",sans-serif;color:black'>make
+recommendations regarding the implementation, development and disposition of
+planning projects</span></p>
+
+<p class=MsoNormal style='text-align:justify;layout-grid-mode:both;text-autospace:
+none'><span style='font-family:"Arial",sans-serif'>•           </span><span
+style='font-size:12.0pt;font-family:"Helv",sans-serif;color:black'>implement
+strategies for effective civic engagement in the planning process</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;layout-grid-mode:
+both;text-autospace:none'><span style='font-size:12.0pt;font-family:"Helv",sans-serif;
+color:black'>build partnerships with community groups and stakeholders</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>URBAN
+DESIGN SPECIALTY</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyTextIndent2><span style='font-family:"Arial",sans-serif'>•           prepare
+sketches illustrating urban design standards, controls and design guidelines </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>MINIMUM ACCEPTABLE
+TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'>  (The following statement represents
+the minimum training and experience standards which will be used to admit or
+reject applicants for tests.  Applications submitted by candidates for this
+class will be reviewed based on training and experience requirements as
+approved on 4/17.)</span></p>
+
+<p class=MsoBodyText><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:0pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoBodyText><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:0pt'>ENVIRONMENTAL PLANNING SPECIALTY</span></u></p>
+
+<h3><span style='font-size:12.0pt;font-family:"Arial",sans-serif;font-weight:
+normal'><span style='text-decoration:none'>&nbsp;</span></span></h3>
+
+<h3><span style='font-size:12.0pt;font-family:"Arial",sans-serif;font-weight:
+normal'>EDUCATION:</span></h3>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Completion of
+a bachelor's degree in engineering, applied science or urban and regional
+planning at an accredited college or university including or supplemented by
+coursework in environmental science or ecology.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>AND</span></h2>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>GENERAL
+EXPERIENCE</span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+text-decoration:none'>:</span></h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Three years of
+technical environmental city planning experience.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SPECIFIC EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+technical environmental city planning experience at the advanced performance
+level.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2 style='page-break-after:auto'><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif'>URBAN DESIGN SPECIALTY</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>EDUCATION</span></u><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>: </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Completion of
+a bachelor's degree from an accredited college or university in architecture,
+landscape architecture, or urban design.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL
+EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Three years of
+technical city planning experience in architectural design, urban design,
+streetscape design, site planning, or public open space design.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SPECIFIC EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+advanced performance level experience in architectural design, urban design,
+streetscape design, site planning, or public open space design.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>PLANNING SPECIALTY</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>EDUCATION</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Completion of
+a bachelor's degree from an accredited college or university in city or
+regional planning, or a related field. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Three years of
+technical city planning experience.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>AND</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SPECIFIC EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+technical city planning experience at the advanced performance level.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OR</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Three years of
+geographic information systems work.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND </span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SPECIFIC EXPERIENCE</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>: </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>specialized geographic
+information systems work designing, maintaining, and producing geographic data
+and graphics for city planning projects.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>AIRPORT SPECIALTY </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>EDUCATION</span></u><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;color:black;
+letter-spacing:-.1pt'> </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in !msorm;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;color:black;
+letter-spacing:-.1pt'>            Completion of a bachelor's degree program at
+an accredited college or university with major coursework in City or Regional Planning,
+Environmental Planning, Transportation Planning, Aviation Planning or a closely
+related field. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>GENERAL
+EXPERIENCE </span></u></p>
+
+<p class=MsoNormal style='margin-left:36.15pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;color:black;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;color:black;
+letter-spacing:-.1pt'>Three years of technical planning experience</span></p>
+
+<p class=MsoNormal style='margin-left:36.15pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;color:black;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>SPECIFIC
+EXPERIENCE</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;color:black;letter-spacing:-.1pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Two years of environmental planning experience at the advanced performance
+level with responsibility for planning and implementing </span><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>sustainability and environmental impact studies for an airport.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>OR</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Two
+years of transportation planning experience at the advanced performance level
+for an airport or other major transportation terminal with responsibility for
+planning and implementing the design or development of capital projects. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'> </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>OR </span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Any equivalent
+combination of education and experience determined to be acceptable by the
+Office of Human Resources that has included completion of a bachelor's degree
+as an educational minimum and the specific experience as indicated above.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'>NOTE</span></u><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:            </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Completion of Master's
+degree program in a field determined to be appropriate to the area of specialization
+will be considered equivalent to two years of the general experience requirement.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif'>CLASSES THAT TYPICALLY MEET THE SPECIFIC EXPERIENCE
+REQUIREMENTS</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>:</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>City
+Planner 3 (3E04) </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>Geographic
+Information Systems Specialist 2 (3E21) for the Planning Specialty only</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in;page-break-after:avoid'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;layout-grid-mode:both'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>NOTE:</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> Selective Factor
+Certification may be utilized, as needed, to fill specific positions.</span></p>
+
+<p class=MsoNormal style='text-align:justify;layout-grid-mode:both'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>In accordance with
+Civil Service Regulation 11.032 - Selective Factor Certification – the
+appointing authority may request certification of eligible candidates with the
+specified training and/or experience to fill specific positions in this class.
+Certification to fill such position will be made from the two highest ranking
+eligible candidates on the eligible list who possess the specified qualification.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in !msorm;text-indent:-1.0in !msorm;
+text-align:justify;page-break-after:avoid'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PHYSICAL AND MEDICAL
+REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Ability to
+physically perform the duties and to work in the environmental conditions
+required of a position in this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Class
+Established</span></b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'> 3/73</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Spec. Revision:</span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> 1/02</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Spec. Revision:</span></b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'> 7/11</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Spec Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC – 4/13</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>Ad. Board – 5/13</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Latest Spec. Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC - 2/17</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>Ad. Board - 4/17</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>SP</span></p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

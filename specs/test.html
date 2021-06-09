@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link  href="../css/Personnel.css"rel="stylesheet" type="text/css" />
+<link  href="../css/wireframe.css"rel="stylesheet" type="text/css" />
+<link  href="../css/form.css"rel="stylesheet" type="text/css" />
+<title>Phila.gov | Human Resources</title>
+<link REL="SHORTCUT ICON" HREF="../Favicon.ico">
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="pngfix.js"></script>
+<![endif]-->
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<script type="text/JavaScript">
+<!--
+    function MM_jumpMenu(targ, selObj, restore) { //v3.0
+        eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+        if (restore) selObj.selectedIndex = 0;
+    }
+
+    function RunSearch() {
+        var queryString = document.getElementById("q").value;
+        var baseUrl = "http://www.google.com/cse?oe=utf8&ie=utf8&source=uds&start=0&cx=012281970149422056935%3Ae3col_wgefa&hl=en&";
+        document.location = baseUrl + "q=" + queryString;
+
+        return 0;
+    }
+    //-->
+    </script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/jobspecs.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var test = "hello alll ppl of the worldings";
+        alert(test);
+
+        $.ajax({
+            type: "GET",
+            url: "../DATA/MasterXML.xml",
+            dataType: "xml",
+            cache: false,
+            success: function (xml) {
+                alert("XML File is loaded");
+                alert(result);
+    //            //$("#featureJobTitle").text("hihihihi");
+    //            var fjTitle = $("#featureJobTitle");
+    //            var fjSalary = $("#featureJobSalary");
+    //            var fjDeadline = $("#featureJobDeadline");
+    //            var fjApplyLink = $("#featureJobApplyOnline");
+    //            $(xml).find("featuredjob").each(function () {
+    //                var xmlJobTitle = $(this).find('jobtitle').text();
+    //                var xmlJobSalary = $(this).find('salary').text();
+    //                var xmlJobDeadline = $(this).find('deadline').text();
+    //                var xmlJobPostingID = $(this).find('postingid').text();
+    //                fjTitle.text(xmlJobTitle);
+    //                fjTitle.attr("href", "https://phila.peopleadmin.com/postings/" + xmlJobPostingID);
+    //                fjSalary.text(xmlJobSalary);
+    //                fjDeadline.text(xmlJobDeadline);
+    //                fjApplyLink.attr("href", "https://phila.peopleadmin.com/postings/" + xmlJobPostingID);
+    //            });
+
+
+            },
+            error: function (xhr) {
+                alert("An error occured: " + xhr.status + " " + xhr.statusText);
+            },
+            async: true
+        });
+    });
+</script>
+
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style1 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body>
+      <div class="page">
+    <div class="branding" style="margin-top:8px;"> 
+		<div class="brandText" >
+		<ul>
+    <li><a href="http://www.phila.gov" style="font-size: 16px;">Phila.Gov</a></li>
+    <li>|</li>
+    <li><a href="http://www.phila.gov/mayor/">Mayor's Office</a></li>
+    <li>|</li>
+    <li><a href="http://www.phila.gov/citycouncil/">City Council</a></li>
+
+    <li>|</li>
+    <li><a href="http://www.phila.gov/business/">Business</a></li>
+    <li>|</li>
+    <li><a href="http://www.phila.gov/Residents/">Residents</a></li>
+    <li>|</li>
+    <li><a href="http://www.phila.gov/visitors/">Leisure</a></li>
+
+    <li>|</li>
+    <li><a href="http://www.phila.gov/311/">Philly311</a></li>
+  </ul>
+
+	</div>
+
+    </div>
+   
+    <div class="headWrap">
+    
+    </div>
+	
+     <div class="dropdown" >
+          <ul id="MenuBar1" class="MenuBarHorizontal">
+            <li><a class="MenuBarItemSubmenu" href="index.html" style="background:url(../../images/nav_bg.gif); width:3em; ">Home</a></li>
+      <li><a href="About.html" style="background:url(display/nav_bg.gif); width:3em;">About</a>
+            	<ul style="margin-top:3px;">
+                  <li><a href="Benefits.html">Employee Benefits</a></li>
+                  <li><a href="EEO_AA.html">EEO/AA Unit</a></li>
+                  <li><a href="Training.html">Employee Training</a></li> 
+                </ul>
+            </li>
+      <li><a class="MenuBarItemSubmenu" href="Jobs.html" style="background:url(../../images/nav_bg.gif); width:2.5em;">Jobs</a>
+               
+                <ul style="margin-top:3px;">
+                  <li><a href="announce/current/index.html">Job Opps</a></li>
+                  <li><a href="http://www.phila.gov/personnel/specs/index.html">Job Class Specs</a></li>
+                  <li><a href="Codes.html">Union Codes</a></li>
+                  <li><a href="Ladders.html">Career Ladders</a></li>
+                </ul>
+            </li>
+      <li style="width:6.5em;"><a href="Resources.html" style="background:url(../../images/nav_bg.gif); width:4em;">Resources</a>
+           		<ul style="margin-top:3px;">
+                  <li><a href="CivilService.html">Civil Service Commission</a></li>
+                  <li><a href="administrative.html">Administrative Board</a></li>
+                  <li><a href="Labor.html">Labor Relations</a></li>
+                  <li><a href="Pension.html">Pension Board</a></li>
+                </ul>
+            </li>
+            <li><a href="FAQs.html" style="background:url(../../images/nav_bg.gif); width:2.5em;  border-right:none;">FAQs</a></li>
+            <li><a href="contact/index.html" style="background:url(../../images/nav_bg.gif); border-right: solid 1px  #0099FF; ">Contact</a></li>
+              
+       </ul>
+         </div>
+       	<div class="body">
+          <div class="subPageTitlebar">
+            <!-- InstanceBeginEditable name="subPageTitlebar" -->
+          	<div class="titleBlock3">
+            <h1>Civil Service Job Class Specifications</h1>
+            </div>
+            
+            <div class="titleBlock4">
+            <ul>
+            	<li><a href="index.html">Home »</a></li>
+                <li><a href="Jobs.html">Jobs »</a></li>
+                <li class="crumbCurrent">Job Class Specs</li>
+            </ul>
+            </div>
+            
+            <div class="clear"></div>
+            
+            <!-- InstanceEndEditable -->
+          </div>
+         
+         <div class="contentleft">
+          <!-- InstanceBeginEditable name="contentLeft" -->
+            <div class="blurb fieldDiv" style="padding:10px;">
+                <p>Job class specifications are the official City of Philadelphia Civil Service job descriptions.</p>
+                <p>Look up a job class specification by its title (alphabetically), or by its class code.</p>
+                <div class="fieldContainers1">
+                    <h3>By Job Title</h3>
+                
+                    <a href="#" class="linkJobTitle">#</a>
+                    <a href="#" class="linkJobTitle">A</a>
+                    <a href="#" class="linkJobTitle">B</a>
+                    <a href="#" class="linkJobTitle">C</a>
+                    <a href="#" class="linkJobTitle">D</a>
+                    <a href="#" class="linkJobTitle">E</a>
+                    <a href="#" class="linkJobTitle">F</a>
+                    <a href="#" class="linkJobTitle">G</a>
+                    <a href="#" class="linkJobTitle">H</a>
+                    <a href="#" class="linkJobTitle">I</a>
+                    <a href="#" class="linkJobTitle">J</a>
+                    <a href="#" class="linkJobTitle">K</a>
+                    <a href="#" class="linkJobTitle">L</a>
+                    <a href="#" class="linkJobTitle">M</a>
+                    <a href="#" class="linkJobTitle">N</a>
+                    <a href="#" class="linkJobTitle">O</a>
+                    <a href="#" class="linkJobTitle">P</a>
+                    <a href="#" class="linkJobTitle">Q</a>
+                    <a href="#" class="linkJobTitle">R</a>
+                    <a href="#" class="linkJobTitle">S</a>
+                    <a href="#" class="linkJobTitle">T</a>
+                    <a href="#" class="linkJobTitle">U</a>
+                    <a href="#" class="linkJobTitle">V</a>
+                    <a href="#" class="linkJobTitle">W</a>
+                    <a href="#" class="linkJobTitle">X</a>
+                    <a href="#" class="linkJobTitle">Y</a>
+                    <a href="#" class="linkJobTitle">Z</a>
+                    <a href="#" class="linkJobTitle">(all)</a>
+                </div>
+                <div class="fieldContainers2">
+                    <h3>By Class Code</h3>
+                    <select id="jobClassDropdown">
+                        <option value=" " selected="selected">class code begins with...</option>
+
+                        <option value="ALL">ALL</option>
+                        <option value="1">1</option>
+                        <option value="1A">1A - General Clerical</option>
+                        <option value="1B">1B - Special Clerical</option>
+                        <option value="1D">1D - Data Process</option>
+                        <option value="1E">1E - Data Proc Prog</option>
+                        <option value="1F">1F - Stores</option>
+
+                        <option value="2">2</option>
+                        <option value="2A">2A - Accounting</option>
+                        <option value="2B">2B - Revenue Collect</option>
+                        <option value="2C">2C - Budget</option>
+                        <option value="2D">2D - Property Mgt</option>
+                        <option value="2E">2E - Purchasing</option>
+                        <option value="2F">2F - Analysis</option>
+                        <option value="2G">2G - Social Science</option>
+                        <option value="2H">2H - Personnel</option>
+                        <option value="2J">2J - Publicity</option>
+                        <option value="2L">2L - General Admin</option>
+                        <option value="2M">2M - Function Admin</option>
+                        <option value="2N">2N - Admin Dir</option>
+                        <option value="2P">2P - Airport Admin</option>
+
+                        <option value="3">3</option>
+                        <option value="3A">3A - Eng &amp; Architect</option>
+                        <option value="3B">3B - Engineering</option>
+                        <option value="3C">3C - Engineer Mgt</option>
+                        <option value="3D">3D - Archit/Landscap</option>
+                        <option value="3E">3E - City Plan &amp; Envir</option>
+                        <option value="3F">3F - Surveying</option>
+                        <option value="3G">3G - Lab Science</option>
+                        <option value="3H">3H - Science/Math</option>
+
+                        <option value="4">4</option>
+                        <option value="4A">4A - Health Tech/Med</option>
+                        <option value="4B">4B - Med Aid/Prac Nurs</option>
+                        <option value="4C">4C - Nursing</option>
+                        <option value="4D">4D - Medical</option>
+                        <option value="4E">4E - Dental Tech</option>
+                        <option value="4F">4F - Dental</option>
+                        <option value="4H">4H - Diet &amp; Nutrition</option>
+                        <option value="4J">4J - Environ Health</option>
+
+                        <option value="5">5</option>
+                        <option value="5A">5A - Social Work</option>
+                        <option value="5B">5B - Youth/Child Couns</option>
+                        <option value="5C">5C - Housing &amp; Neigh</option>
+                        <!--	<option value="5D">5D - Employmnt Couns</option> -->
+                        <option value="5E">5E - Mental Health</option>
+                        <option value="5F">5F - Health Program</option>
+                        <option value="5G">5G - Health Education</option>
+                        <option value="5H">5H - Correctional</option>
+
+                        <option value="6">6</option>
+                        <option value="6A">6A - Police</option>
+                        <option value="6B">6B - Fire</option>
+                        <option value="6C">6C - Police/Fire Tech</option>
+                        <option value="6D">6D - Security</option>
+                        <option value="6E">6E - Investigation</option>
+                        <option value="6F">6F - General Inspect</option>
+                        <option value="6G">6G - Code Inspection</option>
+                        <option value="6H">6H - Code Adm/Tech</option>
+                        <option value="6J">6J - Communications</option>
+
+                        <option value="7">7</option>
+                        <option value="7A">7A - Labor &amp; Trades</option>
+                        <option value="7B">7B - Water/Sewer Main</option>
+                        <option value="7C">7C - Equipment Oper</option>
+                        <option value="7D">7D - Custodial/Elev</option>
+                        <option value="7E">7E - Plant Operations</option>
+                        <option value="7F">7F - Automobile Maint</option>
+                        <option value="7G">7G - Bridge/Structur</option>
+                        <option value="7H">7H - Building Maint</option>
+                        <option value="7J">7J - Mechanical Maint</option>
+                        <option value="7K">7K - Electric/tronic</option>
+                        <option value="7L">7L - Photo/Copy</option>
+                        <option value="7M">7M - Print/Binding</option>
+                        <option value="7N">7N - Park/Grnds Maint</option>
+                        <option value="7P">7P - Misc. Trades</option>
+                        <option value="7Q">7Q - Prisons Indust</option>
+
+                        <option value="8">8</option>
+                        <option value="8B">8B - Food Services</option>
+
+                        <option value="9">9</option>
+                        <option value="9A">9A - Library Serv/Tech</option>
+                        <option value="9B">9B - Library Ops</option>
+                        <option value="9C">9C - Rec (Seasonal)</option>
+                        <option value="9D">9D - Rec &amp; Park Mgt</option>
+                        <option value="9E">9E - Museum</option>
+                        <option value="9G">9G - Art</option>
+                    </select>
+                </div>
+            </div> 
+            <div>
+                <table id="tableXML"></table>
+            </div>
+         
+         
+            <div class="statement"><p><span style="color:#999999;">The City of  Philadelphia is an Equal Opportunity employer and does not permit  discrimination based on race, ethnicity, color, sex, sexual orientation, gender  identity, religion, national origin, ancestry, age, disability, marital status,  source of income, familial status, genetic information or domestic or sexual  violence victim status. If you believe you were discriminated against, call the  Philadelphia Commission on Human Relations at 215-686-4670 or send an email to <a href="mailto:faqpchr@phila.gov">faqpchr@phila.gov</a>. For more information go  to: Human Relations <a href="http://www.phila.gov/humanrelations">Website</a></span></p>
+            </div>
+<!-- InstanceEndEditable -->         </div>
+       
+          <div class="sidebar">
+            <!-- InstanceBeginEditable name="sidebar" -->
+          	<div class="sidebarContent">
+                <ul>
+                    <li><a href="announce/current/index.html" title="Job Opportunities">Job Opportunities  »</a></li>
+                    <li><a href="index.html" title="Job Class Specifications">Job Class Specifications »</a></li>
+                    <li><a href="Codes.html" title="Union/FLSA Codes">Union/FLSA Codes »</a></li>
+                    <li><a href="Ladders.html" title="Career Ladders">Career Ladders »</a></li>
+                </ul>
+            </div>
+          <!-- InstanceEndEditable -->
+          </div>
+          <div class="clear"></div>
+       
+     	</div>
+      
+       <div class="footer">
+        	<div class="content">All Contents Copyright ©  2009 City of Philadelphia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.phila.gov/phils">City Archive - PHILS</a> | Technical Problems: <a href="mailto:webissues@phila.gov">webissues@phila.gov</a> | <a href="http://www.phila.gov/privacy/index.html">HIPAA privacy policy</a> | <a href="http://www.phila.gov/privacy/pdfs/FinalCityOpenRecords.pdf">Right To Know Policy</a> | <a href="http://www.phila.gov/tos/index.html">Terms of Use</a> 
+            </div>
+        </div>
+        </div>
+         
+          <script type="text/javascript">
+              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+              document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-860026-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", { imgDown: "../SpryAssets/SpryMenuBarDownHover.gif", imgRight: "../SpryAssets/SpryMenuBarRightHover.gif" });
+    </script>
+</body>
+</html>
