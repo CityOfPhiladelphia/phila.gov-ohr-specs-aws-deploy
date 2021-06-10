@@ -29,7 +29,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
       run: |
-        aws s3 sync specs "s3://${{ steps.global-vars.outputs.aws_env_prefix }}-phila-gov-website-s3/personnel/" --delete 
+        aws s3 sync specs "s3://${{ steps.global-vars.outputs.aws_env_prefix }}-phila-gov-website-s3/personnel/specs/" --delete 
         if [[ ${{ github.ref }} = refs/heads/staging ]];then
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_INVALIDATE_STAGE }} --paths "/*"
         else
