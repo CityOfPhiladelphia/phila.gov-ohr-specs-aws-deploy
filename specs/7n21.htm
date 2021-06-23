@@ -1,0 +1,611 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>TREE MAINTENANCE WORKER</title>
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"CG Times";}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:-2.0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-1.0in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:24.0pt;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:2.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:line;}
+span.EquationCaption
+	{mso-style-name:"_Equation Caption";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:both;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:both;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>7N21</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PAY RANGE:  13</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-size:12.0pt'>TREE MAINTENANCE WORKER</span></h1>
+
+<p class=MsoNormal align=right style='margin-left:2.0in;text-align:right;
+text-indent:-2.0in'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>(Inspection) </span></p>
+
+<p class=MsoNormal align=right style='margin-left:4.5in;text-align:right;
+text-indent:-4.5in'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>(Trimming)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            This is
+skilled tree maintenance work within the assigned specialty.  Employees in this
+class remove, prune, feed, spray, plant, transplant, cable and treat City trees,
+or perform inspection activities which involve the inspection of shade trees
+for proper maintenance and care, diagnosis of tree diseases, and determining
+the proper placement of new trees on building sites.  Work is performed under
+the supervision of a crew chief or technical superior.  Work involves physical
+exertion and exposure to conditions that can be partially controlled.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>
+(ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>INSPECTION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Receives and
+reviews requests for tree services; inspects trees on City streets and park
+grounds for diseased, infested or damaged conditions; informs property owners
+of their responsibility for trees; recommends the removal or pruning of
+existing trees; issues permits for the removal or planting of trees.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Reviews construction
+plans and makes recommendations to preserve existing trees; reviews plot plans
+to ensure that builders have scheduled tree planting in accordance with park
+regulations.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Answers
+emergency calls to remove fallen trees from roadway; utilizes power saw to
+remove limbs from trees; determines if maintenance crew should be called in
+emergency situations.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TRIMMING</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Climbs a wide
+variety of and/or sizeable trees, employing ropes and ladders or using a
+motorized trim lift; uses power and pole saws, shears, axes and other cutting
+tools to prune trees; feeds trees with dry or liquid mix, applying the proper
+dosages to the base of trees; sprays trees with chemical agents employing spray
+guns and hoses; may remove caterpillar eggs from trees with wire brushes.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Removes fallen
+and standing trees from City streets or park areas; trims branches from trees
+in order to preserve pedestrian and motorist visibility of street signs, stop
+signs and traffic lights; rigs, cuts and removes dead or diseased tree members
+employing slings and ropes.</span></p>
+
+<p class=MsoBodyText style='line-height:normal'><span style='font-size:12.0pt'>            Cables
+trees with split or cracked crotches by bracing trees and inserting wood screws
+where necessary; treats tree cavities applying the type and quantity of
+solution prescribed by technical superiors; may operate a wood chipper.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Drives and
+operates tree maintenance truck with hydraulic lift and bucket.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Performs
+related work as required.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>REQUIRED KNOWLEDGE, SKILLS
+AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>KNOWLEDGE OF</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+methods, practices, tool and materials used in the care and maintenance of
+trees.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+occupational hazards and safety precautions involved in tree maintenance work.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           common
+tree diseases and infestations and the proper methods of their treatment.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+classification and structure of trees and their root systems.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+City regulations concerning the planting of street trees for the inspection
+specialty.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SKILL IN</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+use of ropes, pole shears, pruning saws, power saws, sprayers, and other
+standard tools and equipment used to trim trees for the trimming specialty.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           the
+operations of a motorized trim lift for the trimming specialty.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ABILITY TO</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           follow
+instructions and safety precautions when using pesticides and sprays.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           establish
+and maintain effective working relationships with contractors and the public
+for the inspection specialty.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>•           communicate
+effectively both orally and in writing for the inspection specialty.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>MINIMUM ACCEPTABLE
+TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'> (The following statement represents
+the minimum training and experience standards which will be used to admit or
+reject applicants for tests.  Applications submitted by candidates for this
+class will be reviewed based on training and experience requirements as
+approved on 4/17.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers (W1)",sans-serif !msorm;
+text-decoration:none !msorm'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>EDUCATION</span></u></span><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>BOTH SPECIALTIES:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Education
+equivalent to the completion of the tenth school grade.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND<br clear=all
+style='page-break-before:always'>
+</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>EXPERIENCE:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>INSPECTION SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+experience in the care and maintenance of trees, which shall have included the
+recommendation of treatment of trees for diseased or damaged conditions.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TRIMMING SPECIALTY:</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+experience in the care and maintenance of trees, which shall have included
+climbing trees by means of ropes.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OR</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+full-time equivalent experience in the care and maintenance of trees in the
+Philadelphia Parks and Recreation TreeKeeper program. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OR</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Any equivalent
+combination of education and experience determined to be acceptable by the Office
+of Human Resources.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PHYSICAL AND MEDICAL
+REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Ability to
+physically perform the duties and to work in the environmental conditions
+required of a position in this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>LICENSES, REGISTRATIONS
+AND/OR CERTIFICATES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Possession of
+a valid proper class motor vehicle operator's license as issued by the
+Commonwealth of Pennsylvania prior to appointment and during tenure of
+appointment as a Tree Maintenance Worker.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Class
+Established</span></b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'> - 9/67</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Spec.
+Revision:</span></b></p>
+
+<h2><span style='font-family:"Arial",sans-serif'>CSC - 6/03</span></h2>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad. Board – 1/04</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Latest
+Spec. Revision:</span></b></p>
+
+<h2><span style='font-family:"Arial",sans-serif'>CSC - 3/17</span></h2>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad. Board – 4/17</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>JH</span></p>
+
+</div>
+
+</body>
+
+</html>

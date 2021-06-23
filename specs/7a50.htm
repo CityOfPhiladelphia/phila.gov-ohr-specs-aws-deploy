@@ -1,0 +1,924 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Highway Operations Manager</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"CG Times";}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+h1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	text-decoration:underline;}
+h3
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+h4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h5
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-1.0in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:24.0pt;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:2.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:line;}
+span.EquationCaption
+	{mso-style-name:"_Equation Caption";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:both;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1; margin: 21pt;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:right'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>                                                                                                                                                   7A50</span><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'></span></p>
+
+<p class=MsoNormal style='text-align:right'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>                                                                                                                           PAY
+RANGE: N20</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h5>HIGHWAY OPERATIONS MANAGER</h5>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            This is
+managerial level highway operations work directing, through subordinate highway
+operations assistant managers and street repair </span><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>supervisors, the </span><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>Streets Department's city-wide street and highway maintenance and
+construction activities performed by district forces, paving crews, and
+contractors working on resurfacing and resurfacing preparation projects. Work
+involves planning, coordinating, scheduling and directing through subordinate
+supervisors, city-wide concrete-mobile and asphalt-mobile operations, asphalt
+paving, equipment scheduling and utilization, pothole repair, city-wide
+linestriping applications, and a variety of programs including lot cleaning and
+snow and ice removal. Determining work priorities, scheduling deployment of
+division personnel and equipment, motivating subordinates and coordinating
+divisional work with city and other governmental agency and utility personnel
+are significant aspects of the work. The employee in this class is routinely
+required to work in excess of the regular scheduled workday. Work is performed
+under the direction of a technical superior.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><u><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>ALLOCATING FACTORS</span></u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>: (The following
+conditions must be met for a position to be allocated to this class.)</span></p>
+
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>The employee in this class must perform managerial level
+work directing, through subordinate managers and supervisors, the Streets
+Department's city-wide street and highway maintenance and construction
+activities performed by district forces, asphalt paving crews, and contractors
+working on resurfacing and resurfacing preparation projects.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>The work must be performed in the Highway Division of the
+Streets Department.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>Only one position will be allocated to this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'> <u>TYPICAL
+EXAMPLES OF WORK</u> (ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Receives
+a variety of street and highway maintenance and construction projects from an
+engineering supervisor and reviews requests to determine automotive equipment,
+materials and labor needs; lays out and assigns project to subordinate managers
+and supervisors, together with the necessary sketches or plans and
+instructions; directs the work and operations of street and highway
+maintenance, asphalt paving, and equipment utilization; reviews work in
+progress and upon completion for conformance to work standards and established
+construction or maintenance requirements; confers with subordinate supervisors
+regarding labor or material problems; confers with district engineers,
+supervisors, crew chiefs and supervisors of other construction and maintenance
+crews regarding the coordination of work activities; manages contracted work of
+the city-wide resurfacing operation, which consists of a large staff of
+employees with an extensive budget. </span></p>
+
+<p class=MsoBodyText3>            Confers with district engineers, departmental
+personnel or other requesting authorities needing concrete or asphalt repair or
+construction work; determines priorities of work and plans work of
+concrete-mobile and asphalt-mobile crews; oversees city-wide linestriping and
+pothole repair; spot checks work progress of crews for adherence to schedule;
+checks materials on hand and functioning of equipment.</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Serves
+in a<i> </i>liaison capacity with other City departments and agencies in order
+to coordinate and schedule planned or emergency resurfacing and major utilities
+work attends interdepartmental meetings to discuss existing policies; develops
+policy in areas of resurfacing and roadways maintenance; contracts work to
+others departments as needed; develops bid proposals to contract work from
+other city agencies.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Establishes
+operational plans and goals of the highway maintenance division; implements
+performance measurements to assess effectiveness of divisional plans and
+processes; establishes goals and objectives and reviews and evaluates
+performance of subordinates; motivates subordinates; interviews potential staff
+for highway maintenance division; plans, provides for, and arranges training in
+supervisory principles and practices for subordinate managers and supervisors;
+plans, provides for, and arranges training in procedures and techniques;
+conducts safety meetings, providing safety instructions to field crews; meets
+with union officials to discuss labor related issues; recommends disciplinary
+actions and attends disciplinary hearings.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Reviews
+new equipment for effectiveness; field-tests new equipment and materials;
+reviews and makes recommendations in bidding and contracts processes; orders
+and maintains inventories of equipment, tools, materials and supplies; confers
+with equipment sales personnel; reads literature to keep abreast of latest
+maintenance and construction methods and practices.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Schedules
+the cleaning of lots, determines equipment, materials and labor needs; plans
+and coordinates the timetable of work; directs work in progress and upon
+completion; resolves unforeseen problems arising during the course of the work.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Assists
+the chief highway engineer in the snow and ice control program; tours the city
+where crews are at work and observes their progress; notes condition of
+personnel and equipment; re-deploys personnel and equipment or orders
+additional units into service; takes corrective measures to solve material
+problems; reviews and changes the operating procedures on snow and ice control
+programs to reflect changes in traffic patterns, street openings and closing or
+other conditions.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Receives
+notices of plumbers ditches and departmental lists of street and highway
+openings; assigns ditch inspection work to district inspectors with any special
+instructions needed; reviews inspectors' work reports and confers with them
+about specific assignments; personally checks those jobs where legality of work
+is in question; assigns inspectors to meet with citizens to resolve complaints.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Performs
+related work as required.</span></p>
+
+<span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt;layout-grid-mode:line'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>REQUIRED KNOWLEDGE,
+SKILLS AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>KNOWLEDGE OF</span></u><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>street and highway maintenance and construction methods
+and practices</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>materials and equipment used in street and highway
+maintenance and construction work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>automotive and related equipment used in street and
+highway maintenance and construction work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>linestriping applications methods, practices, materials,
+and equipment</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>snow and ice removal operations</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>properties
+of concrete, asphalt and other materials used in street and highway maintenance
+and construction work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>street construction site management and traffic control </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.15pt'>water drainage as it applies to the resurfacing of
+streets and highways</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>blueprints, specifications and sketches relevant to the
+work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>City rules and regulations regarding the repair and
+maintenance of streets and highways</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>administrative
+principles and practices<span style='letter-spacing:-.1pt'> relevant to the
+work</span>, including budget preparation, monitoring expenditures, and
+procurement</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>contracting procedures, requirements and regulations
+relevant to the work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>inventory </span><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif'>maintenance and control <span
+style='letter-spacing:-.1pt'>practices for equipment, tools, materials and
+supplies used in street and highway maintenance and construction work</span></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>supervisory methods and techniques</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>performance
+management, assessment and improvement </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>Civil Service Regulations and labor contracts and
+agreements relevant to the work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>occupational hazards and safety methods and procedures
+involved in street and highway maintenance and construction work</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>ABILITY TO</span></u><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>plan, manage, and assign and review the work of
+diversified crews engaged in a variety of street and highway maintenance and
+construction work</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>lay out work and to understand and interpret blueprints,
+specifications and sketches</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>develop operational plans and goals</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>effectively implement performance measures</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>make accurate arithmetic computations</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>estimate materials, equipment, manpower and time needed
+to complete projects</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>convey ideas clearly and concisely</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.1pt'>establish and maintain effective working relationships
+with associates</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>MINIMUM ACCEPTABLE
+TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:
+"Univers (W1)",sans-serif;letter-spacing:-.1pt'> (The following statement
+represents the minimum training and experience standards which will be used to
+admit or reject applicants for tests.  Applications submitted by candidates for
+this class will be based on training and experience requirements as approved on
+12/15.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1 style='line-height:normal'>EDUCATION<span style='text-decoration:none'>:</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText2 style='line-height:normal'><span style='font-weight:normal'>            Completion
+of a two-year program at a technical institute or an accredited college or
+university with major course work in building construction technology,
+architectural design or civil, mechanical, materials engineering or engineering
+technology.</span></p>
+
+<h1 style='line-height:normal'><span style='text-decoration:none'>&nbsp;</span></h1>
+
+<h1 style='line-height:normal'>AND</h1>
+
+<h3 style='line-height:normal'><u><span style='font-weight:normal'>GENERAL
+EXPERIENCE</span></u><span style='font-weight:normal'>:</span></h3>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Five
+years of experience performing construction or maintenance work for the city's
+streets and highways.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>AND</span></u></p>
+
+<h4 style='line-height:normal'>SPECIFIC EXPERIENCE<span style='text-decoration:
+none'>:</span></h4>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Two years of experience
+above the second supervisory level, planning, scheduling and coordinating,
+through subordinate supervisors, the work of crew chiefs, skilled, semiskilled
+and laboring personnel performing citywide construction or maintenance of the
+city's streets and highways.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h6><u><span style='letter-spacing:0pt'>OR </span></u></h6>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif'>            Four years of the above
+experience at the second supervisory level, supervising through subordinate
+crew chiefs, the activities of skilled, semi-skilled and labor crews engaged in
+street and highway maintenance and repair.</span></p>
+
+<p class=MsoNormal style='margin-right:.2in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>&nbsp;</span></p>
+
+<h1 style='line-height:normal'><span style='letter-spacing:-.15pt'>OR </span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.15pt'>Any equivalent combination of education and experience that has
+included completion of the twelfth school grade as the educational minimum and
+the specific experience.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='text-decoration:
+none !msorm'><u><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.15pt'>City of Philadelphia classes which typically meet the
+specific experience requirement:</span></u></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.15pt'>Highway Operations
+Assistant Manager (7A49)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.15pt'>Asphalt Paving
+Supervisor (7A36)</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in !msorm;text-indent:-1.0in !msorm;
+text-align:justify'><u><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-align:justify;text-indent:
+-40.5pt'><u><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.15pt'>NOTE:</span></u></p>
+<p><span style='font-size:12.0pt;font-family:
+"Univers (W1)",sans-serif;letter-spacing:-.15pt'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Additional specific
+experience may be substituted on a two for one basis for each year of the minimum
+education requirement.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-align:justify;text-indent:
+-1.0in'><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<h2 style='line-height:150% !msorm;margin-left:40.5pt;text-indent:-40.5pt;
+line-height:normal'><span style='font-weight:bold !msorm'><span
+style='letter-spacing:-.15pt;font-weight:normal'>NOTE:</span></span></h2>
+
+<p><span style='letter-spacing:-.15pt;text-decoration:none'> </span><span style='font-family:"Arial",sans-serif;
+font-weight:normal;text-decoration:none'><span style='font-weight:normal !msorm'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Possession
+of the Construction Management Certificate issued by the City of Philadelphia
+demonstrating successful completion of the Street’s Department 10-course
+Construction Management Certificate Program and one additional year of general experience satisfies the minimum education
+requirement. </span></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>PHYSICAL AND
+MEDICAL REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Ability
+to physically perform the duties and to work in the environmental conditions
+required of a position in this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>LICENSES,
+REGISTRATIONS AND/OR CERTIFICATES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>            Possession
+of a valid proper class motor vehicle operator's license as issued by the Common­wealth of Pennsylvania prior to appointment and during tenure of employment in this
+class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:right'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>                                                                     <b>Class
+Established</b>: CSC - 12/01 Ad. Board - 1/02</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>Spec. Revision: </span></b><span style='font-size:12.0pt;font-family:
+"Univers (W1)",sans-serif;letter-spacing:-.1pt'>CSC - 6/04<b> </b>Ad Board -
+8/04</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>Latest Spec. Revision: </span></b><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>CSC – 11/15<b> </b>Ad
+Board – 12/15</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:
+-.1pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>CW</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Univers (W1)",sans-serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Airport Administrative Manager</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Univers;}
+@font-face
+	{font-family:"CG Times";}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;
+	layout-grid-mode:line;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:both;
+	text-decoration:underline;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:both;
+	text-decoration:underline;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:both;
+	text-decoration:underline;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:both;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"CG Times",serif;
+	layout-grid-mode:both;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"CG Times",serif;
+	layout-grid-mode:both;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;
+	layout-grid-mode:both;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";
+	font-family:"CG Times",serif;
+	layout-grid-mode:both;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-family:"CG Times",serif;
+	layout-grid-mode:both;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1; margin: 21 pt;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:12.0pt;
+font-family:"Univers (W1)",sans-serif;letter-spacing:-.1pt'>                                                                                                                                                   </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>2P08</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                                                                                                           PAY
+RANGE: N25</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                                                                                                                      </span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>AIRPORT ADMINISTRATIVE MANAGER</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL DEFINITION</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>            This
+is specialized administrative management work directing the procurement of goods
+and professional services, materials management, risk management and Americans
+with Disabilities Act (ADA) compliance, and Lost and Found functions for the
+Philadelphia International Airport and Philadelphia Northeast Airport.  The
+employee in this class is responsible for managing, through subordinate
+managers and supervisors, the procurement of goods and services, professional
+services contracts, inventory control, warehouse storage and distribution of a
+wide variety of materials, supplies and equipment to support Airport operations
+on a regular basis and during emergencies. Contact with, executive staff, departmental
+managers, other city agencies, consultants, external stakeholders such as
+airline tenants, advocacy groups and concession vendors is significant to the
+work including representing the Airport in an official capacity at events. The
+employee in this class reports to a Deputy Director of Aviation.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.15pt'>ALLOCATING FACTORS</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.15pt'>:
+(The following conditions must be met for a position to be allocated to this class.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>This position must be
+located at the Airport.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>This position must be
+responsible for planning and directing, through subordinate supervisors, the
+procurement of goods and services, inventory control, risk management and ADA
+compliance for the Philadelphia International Airport and Philadelphia
+Northeast Airport.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>Only one position may be allocated to this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>
+(ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Directs the development
+of contracts for supplies, services, and equipment; responsible for ensuring
+vendors are held accountable for purchased products and services; directs the
+preparation of departmental procurement contracts, various systems for
+processing requests including small purchase orders, and coordinates with the City’s
+central Procurement Department to remedy compliance issues; oversees the
+monitoring of contractors; expedites contract amendments as needed, monitors the
+Airport Disenfranchised Business Enterprise contract compliance in
+collaboration with the Program Director.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Directs the preparation
+of specifications for contract obligations and purchase requisitions; responsible
+for budgeting and procuring  service, supply, equipment and professional
+services contracts; ascertains whether funds are available; makes
+recommendations for approval; <span style='letter-spacing:-.1pt'>directs,
+through subordinate supervisors, the review and approval of all purchase
+requisitions and other documents;</span> resolves requisition, purchasing, or shipping
+problems; coordinates with city and outside agencies to determine status of
+specific requisitions; oversees the maintenance of related divisional or
+departmental records; reviews contracts; administers service contracts; reviews
+contracts, procurement rules and budgets for other Airport units.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>            Directs the risk management program
+for the Airport; ensures, through subordinate supervisors, compliance with
+regulations of insurance programs, tracking and maintaining insurance
+certificates and oversees insurance loss prevention; reviews reports, coordinates
+with the City’s Office of Risk Management and insurance companies in meetings
+to track claims against the property and liability insurance contracts; manages
+the Business Continuity Plan and updates the Plan on an as-needed basis.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>            Directs the Airport-wide ADA
+compliance program; coordinates with city officials and directs outreach to
+members of the disabled community and Airport tenants in order to enhance the
+Airport’s environment for the disabled community; reviews recommendations for
+initiatives including website changes and scheduled events; analyzes reports in
+order to <span style='color:black'>update program policies according to federal
+regulations;  oversees the Airport Autism Awareness Program; implements new
+program policies and reports program changes to upper management.</span></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            </span><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Manages the warehouse,
+through subordinate supervisors, clerical and stores personnel in maintaining
+records, and stores commodities; <span style='letter-spacing:-.1pt'>directs the
+maintenance of all records concerning procurement of goods and services, and
+materials management functions; ensures the safeguarding of Airport assets at
+the warehouse; periodically reviews reports of the status of all accounts and
+authorizes the initiation of action to transfer funds to cover overages and
+shortages in accounts; </span>determines methods and procedures to improve
+requisitioning, issuing and storing of materials and supplies; ensures that
+proper procedures are followed; reviews inventory and other records for
+accuracy and completeness; directs the Lost and Found program operations;
+implements new policies regarding overall warehouse and Lost and Found
+functions. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>            Establishes cross training for all
+subordinates; develops and implements training programs for Airport procurement
+staff and other Airport Units; confers with subordinate supervisors regarding
+staffing levels and develops staffing recommendations; prepares budget for
+staffing needs for unit; informs subordinates of expectations and carries out
+performance management; enforces personnel policies and procedures with staff;
+conducts investigations of employee complaints and addresses disciplinary
+issues.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Performs
+related work as required.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>REQUIRED KNOWLEDGE, SKILLS
+AND ABILITIES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>KNOWLEDGE OF</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>the application of administrative and management
+principles and practices in solving a variety of operational, budgeting, and
+administrative problems</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>City of Philadelphia contract management cost principles
+and guidelines</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>City and departmental policies and procedures pertaining
+to labor and </span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>personnel,
+budgets, procurement and disadvantaged business contract review and monitoring</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>standard record keeping, budgetary, and accounting
+methods and processes related to airport management</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>materials management, including procurement and
+accounting, and maintaining control of Airport inventory</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>risk
+management practices as they relate to safety, claims, and loss prevention</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>materials management, including procurement and
+accounting transactions</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>Federal Aviation Administration (FAA) and U.S. Department
+of Transportation regulations related to administrative duties</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>federal regulations as they pertain to the Americans With
+Disabilities Act</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>supervisory principles and practices</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>business process planning</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>public relations principles and practices</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SKILL IN</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>analyzing information and evaluating results for programs</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>solving technical problems pertaining to administrative
+responsibilities</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>developing, designing or revising administrative policies
+and procedures</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>managing and leading a team of administrative, clerical
+and stores personnel</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>preparing and analyzing budgets</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ABILITY TO</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>prepare and present effective written and oral reports to
+airport management and governmental agencies </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>p</span><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>lan,
+supervise and review the work of internal and external staff members engaged in
+contractual, fiscal, risk management and inventory operations</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>establish and maintain effective working relationships
+with Airport management, City departmental representatives, governmen­tal
+agencies, industrial and commercial firms, consultants, civic organizations,
+associates, Airport tenants, Airport customers and the general public</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>prepare operating budgets for areas of responsibility</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>communicate effectively, including public speaking and in
+writing </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>organize and prioritize administrative projects to meet
+deadlines</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>MINIMUM ACCEPTABLE
+TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'> (The following statement represents
+the minimum training and experience standards which will be used to admit or reject
+applicants for tests.  Applications submitted by candidates for this class will
+be reviewed based on training and experience requirements as approved on 12/15.)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>EDUCATION</span></u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Completion
+of a bachelor's degree program at an accredited college or university.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2><span style='font-family:"Arial",sans-serif'>AND</span></h2>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>GENERAL
+EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Four
+years of full performance administrative experience.  </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>AND</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>SPECIFIC
+EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OPTION
+1</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Three years of
+supervisory technical procurement experience at or above pay range N23 with
+responsibility for planning, evaluating and reviewing the work of procurement technicians
+engaged in developing purchasing specifications and standards and purchasing an
+assigned group of commodities or services.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OR
+</span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>OPTION
+2</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Two years of
+experience as a Departmental Procurement Specialist with responsibility for supervising
+subordinate personnel engaged in general administration and in the maintenance
+of the department's computerized requisition record and tracking system AND two
+years of experience at or above pay range EP19/N19 performing technical
+procurement work.</span></p>
+
+<h3><span style='font-family:"Arial",sans-serif'><span style='text-decoration:
+ none'>&nbsp;</span></span></h3>
+
+<h3><span style='font-family:"Arial",sans-serif'>OR </span></h3>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Any equivalent
+combination of education and experience determined to be acceptable by the
+Office of Human Resources, which has included the completion of a bachelor’s
+degree and the specific experience as indicated above.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='text-decoration:
+none !msorm'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>CLASSES THAT TYPICALLY MEET THE SPECIFIC EXPERIENCE
+REQUIREMENTS:</span></u></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Procurement Technician
+Supervisor (2E14)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Procurement Specification
+Analyst (2E07)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>PHYSICAL AND MEDICAL
+REQUIREMENTS</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Ability to
+physically perform the duties and to work in the environmental conditions
+required of a position in this class.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>LICENSES, REGISTRATIONS
+AND/OR CERTIFICATES</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Possession of
+a valid proper class motor vehicle operator's license as issued by the
+Commonwealth of Pennsylvania prior to appointment and during tenure of
+employment as an Airport Administrative Manager.  </span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:black'>Must be able to pass and maintain
+Security Identification Display Area (SIDA) <span style='font-size:10.0pt !msorm'>and
+AOA (Airfield Operations Area) </span>clearance at the time of appointment and during
+tenure of employment as the Airport Administrative Manager.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                                                                                               Class
+Established </span></b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>11/71</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Spec.
+Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>CSC – 4/14</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad. Board – 5/14</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Latest
+Spec. Revision:</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>CSC -11/15</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Ad. Board - 12/15</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>JH</span></p>
+
+</div>
+
+</body>
+
+</html>

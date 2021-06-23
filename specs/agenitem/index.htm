@@ -1,0 +1,682 @@
+<!--
+ * Description: Main Html template for Pjax.
+ * Created: December ‎07, ‎2016.
+ * Author: Hani Alqaffas -  Hani.Alqaffas@phila.gov
+ * Template Version: 1.0.2
+ * Template Last update: June 11, 2018.
+ * WebPage Last generated: Monday, June 11, 2018 11:50 AM.
+ -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+         <!-- IMPORTANT NOTE ABOUT BASE TAG:
+          1) Insert base tag as first child of HEAD tag
+          2) MAKE SURE the URL (href)  ENDS WITH '/'
+          3) Use absolute url (FULL URL) or  relative url (part of url)
+         -->
+       <base href="/personnel/" target=""/>
+
+      <!-- meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Cache-control" content="public">
+
+      <meta name="robots" content=" follow, index ">
+        <!-- For Ajax -HTML snapshot [https://developers.google.com/webmasters/ajax-crawling/docs/specification] -->
+        <meta name="fragment" content="!">
+
+        <!-- Dynamic updated By pjax plugin. Use [ PjaxPlugin.SetMetaTag (name, content); ]-->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content=" Office of Human Resources  - City of Philadelphia"> <!--   Office of Human Resources  - City of Philadelphia  -->
+
+
+
+		<!-- Dynamic updated By pjax plugin. Use [ PjaxPlugin.SetTitleTag (ntitle); ]-->
+        <title>Phila.gov | Human Resources | C.S.C. Agenda Meetings </title>
+
+    <script>
+
+      coreFilesOnErrorCounter=0;
+      coreFilesDetails="";
+
+      function CoreFileOnError(element)
+      {
+        console.log(element);
+        coreFilesDetails +="\t"+(++coreFilesOnErrorCounter)+") Could not load file: "+element.outerHTML+"\n";
+        coreFilesDetails +="\t   "+ ((element.src) ? "The full src is ["+element.src+"]." : "The full href is ["+element.href+"].")+"\n\r\n\r";
+      }
+
+      document.onreadystatechange = function()
+      {
+
+        if (document.readyState == "complete")
+        {
+
+          if(coreFilesOnErrorCounter>0)
+          {
+            console.log("\n\n");
+            console.log("##########################################################################################");
+            console.log("#                          ERROR: COULD NOT GENERATE THE WEBSITE                         #");
+            console.log("#                                 Below Are The Details                                  #");
+            console.log("##########################################################################################");
+
+             baseTag =  (document.getElementsByTagName("BASE")[0])? ("   "+document.getElementsByTagName("BASE")[0].outerHTML+ "\n\r   The full href is [" +document.getElementsByTagName("BASE")[0].href+"].") : "\t The HTML <base> Tag is undefind [not created]. You have to create the HTML <base> Tag.\n\r\t To learn more about  HTML <base> Tag  visit [https://www.w3schools.com/tags/tag_base.asp]";
+            console.log("A) Check the 'href' for <base> element.\n\r  ----------------------------------\n\r"+baseTag+"\n\r\n\r");
+            console.log("B) Could not load ["+coreFilesOnErrorCounter+"] CORE files:\n\r  ----------------------------------");
+            console.log (coreFilesDetails);
+            console.log("\n\r##########################################################################################");
+
+
+            html='<div>'
+            +'<center style="width: 100%; position: absolute; top:10%;"><br/>'
+            +'<img src="_pjaxApplication/core/_assets/img/logo/OHR-Banner-L.png?v=1.0.0" alt="error img" style="width: 100%;  max-width: 800px;"/><br/>'
+            +'<h1><strong style="color:red;"> Oops! Something went wrong . </strong></h1><h2 style="color:black;">Please try again later.</h2><a style="font-size:10px;" href="mailto:OHR.IT.Staff@Phila.gov?subject=Error%20-%20Office%20of%20Human%20Resources%20Website.&body=Please%20see%20the%20link%20below%0A'+window.location.href+'">Report this problem to support</a></p>'
+            +'</center>';
+            +'</div>';
+
+            //####################################################################################
+
+            // change background
+            document.getElementsByTagName("html")[0].style="height:100%; width: 100%; height:100%;";
+            // hide body element
+            document.getElementsByTagName("body")[0].style="visibility:hidden";
+
+            // create new element and insert it outside body element
+            newNode = document.createElement("div");
+            newNode.setAttribute("id", "loading-error");
+
+            newNode.innerHTML =html;
+            document.getElementsByTagName("html")[0].appendChild(newNode);
+          }
+        }
+      }
+
+    </script>
+
+    <!-- icon-->
+    <link rel="icon" href="_pjaxApplication/core/_assets/img/icons/favicon.ico?v=1.1.3" onerror="CoreFileOnError(this)">
+
+    <!--Core - main css files  -->
+    <link rel="stylesheet" type="text/css" href="_pjaxApplication/core/_assets/css/combined-css-core-files.css?v=4.1.3" onerror="CoreFileOnError(this)">
+
+    <!-- Core - main js files -->
+    <script src="_pjaxApplication/core/_assets/js/combined-js-core-files.js?v=4.1.3" onerror="CoreFileOnError(this)"></script>
+
+    <!-- add timestamp to not cache websiteConfiguration file -->
+    <script>document.write("<script src='_pjaxApplication/core/_assets/js/websiteConfiguration.js?v=" + Date.now() + "'><\/script>");</script>
+
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="_pjaxApplication/core/_assets/css/original-css-core-files/noscript.css?v=1.1.3">
+        <div id="noscript" class="alert alert-danger text-center" role="alert">
+             <span> For full functionality of this site it is necessary to enable JavaScript.</span>
+            <b class="text-muted">Here are the </b><b><a href="https://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in your web browser</a></b>.
+         </div>
+    </noscript>
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <header class="bg-primary text-white">
+      <!--container-fluid-->
+        <div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><ul class="list-inline city-links text-left"><li> <a class="link-1" href="http://www.phila.gov/" title="City of Philadelphia">Phila.Gov</a> &nbsp;&nbsp;<span class="span-1" aria-hidden="true"></span></li><li> <a class="link-2" href="http://www.phila.gov/mayor" title="Mayor's Office">Mayor's Office</a> &nbsp;&nbsp;<span class="span-2" aria-hidden="true"></span></li><li> <a class="link-3" href="http://www.phila.gov/citycouncil" title="City Council">City Council</a> &nbsp;&nbsp;<span class="span-3" aria-hidden="true"></span></li><li> <a class="link-4" href="http://www.phila.gov/business" title="Business Services">Business</a> &nbsp;&nbsp;<span class="span-4" aria-hidden="true"></span></li><li> <a class="link-5" href="http://www.phila.gov/Residents" title="Residents"> Residents</a> &nbsp;&nbsp;<span class="span-5" aria-hidden="true"></span></li><li> <a class="link-6" href="http://www.phila.gov/visitors" title="Leisure">Leisure</a> &nbsp;&nbsp;<span class="span-6" aria-hidden="true"></span></li><li> <a class="link-7" href="http://www.phila.gov/311" title="Philly311">Philly311</a> &nbsp;&nbsp;<span class="span-7" aria-hidden="true"></span></li></ul></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <a href="index.html" class=" text-center"> <img src="_pjaxApplication/widgets/_assets/img/logo/COP_OHR_banner.png?v=1.0.0" class="banner img-responsive tex-right" alt="The Office of Human Resources banner" title="The Office of Human Resources"> </a></div></div></div>
+    </header>
+
+     <!-- main-navbar -->
+    <nav id="main-navbar" class="navbar navbar-inverse bg-dark navbar-static-top">
+        <div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-menu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-menu-hamburger"> Menu</span> </button><ul class="nav navbar-nav navbar-center"><li><a class="navbar-brand pjax-link active" href="index.html" title="home"></a></li></ul></div><div class="collapse navbar-collapse center" id="bs-navbar-collapse-menu"><ul class="nav navbar-nav navbar-center"><li><a class="pjax-link" data-pjax-webpagetitle="" href="index.html">Home</a></li><li><a class="pjax-link" href="about.html">About</a></li><li class="dropdown"> <a href="Jobs.html" class="dropdown-toggle disabled pjax-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Jobs <span class="caret"></span></a><ul class="dropdown-menu"><li><a class="pjax-link" href="JobOpps.html">Job Opps</a></li><li><a class="pjax-link" href="specs/JobInterestForm.html">Job Interest</a></li><li><a class="pjax-link" href="Specs.html">Job Class Specs</a></li><li><a class="pjax-link" href="Payranges.html">Pay Ranges</a></li><li><a class="pjax-link" href="Codes.html">Union Codes</a></li><li><a class="pjax-link" href="Ladders.html">Career Ladders</a></li><li><a class="pjax-link" href="CivilServiceResidencyWaivers.html">Residency Waivers</a></li></ul></li><li class="dropdown"> <a href="Resources.html" class="dropdown-toggle disabled pjax-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span></a><ul class="dropdown-menu"><li><a class="pjax-link" href="CivilService.html">Civil Service Commission</a></li><li><a class="pjax-link" href="administrative.html">Administrative Board</a></li><li><a class="pjax-link" href="Labor.html">Labor Relations</a></li><li><a class="pjax-link" href="Pension.html">Pension Board</a></li><li><a class="pjax-link" href="Benefits.html">Employee Benefits</a></li><li><a class="pjax-link" href="EEO_AA.html">EEO/AA Unit</a></li><li><a class="pjax-link" href="Training.html">Employee Training</a></li></ul></li><li><a class="pjax-link" href="FAQs.html">FAQs</a></li><li><a class="pjax-link" href="Contact.html">Contact</a></li></ul></div></div></div></div>
+    </nav>
+
+
+
+    <section id="main-section">
+      <div class="container">
+        <div class="row">
+          <!-- pjax-views-container -->
+          <div  data-pjax="view-content" class="col-xs-12 col-sm-12  col-md-12 col-lg-12 well">
+              <!-- pjax view content  starts here-->
+			  		
+<title>Phila.gov | Human Resources | C.S.C. Agenda Meetings </title>
+
+<h1 class="webpage-title" >AGENDA MEETINGS</h1>
+
+<h3 class="text-center">Summary of Results for Job Classification, Pay and Civil Service Regulation Matters</h3>
+
+<div id="agenda-meetings-container" class="container-fluid">
+
+    <div class="row">
+	
+        <div class="col-md-2 cols-same-level">
+            <ul class="list-group">
+                <li class="list-group-item active">2019</li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Jan-2019.pdf' title='Jan 2019 Agenda'>Jan-16-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Feb-2019.pdf' title='Feb 2019 Agenda'>Feb-20-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Mar-2019.pdf' title='Mar 2019 Agenda'>Mar-20-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Apr-2019.pdf' title='Apr 2019 Agenda'>Apr-17-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/May-2019.pdf' title='May 2019 Agenda'>May-15-2019</a></li> 
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Jun-2019.pdf' title='Jun 2019 Agenda'>Jun-19-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Jul-2019.pdf' title='Jul 2019 Agenda'>Jul-17-2019</a></li>
+                <li class="list-group-item"><span data-href='specs/agenitem/agenda_results_pdf/2019/Aug-2019.pdf' title='Aug 2019 Agenda'>Aug</span></li>
+				<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Sep-2019.pdf' title='Sep 2019 Agenda'>Sep-18-2019</a></li>
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Oct-2019.pdf' title='Oct 2019 Agenda'>Oct-16-2019</a></li> 
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Nov-2019.pdf' title='Nov 2019 Agenda'>Nov-20-2019</a></li> 
+                <li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2019/Dec-2019.pdf' title='Dec 2019 Agenda'>Dec-18-2019</a></li> 
+            </ul>
+        </div>
+		
+        <div class="col-md-2 cols-same-level">
+
+	        <ul class="list-group">
+	            <li class="list-group-item active">2018</li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Jan-2018.pdf' title='Jan 2018 Agenda'>Jan-17-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Feb-2018.pdf' title='Feb 2018 Agenda'>Feb-21-2018</a></li>
+        		<li class="list-group-item"><span data-href='specs/agenitem/agenda_results_pdf/2018/Mar-2018.pdf' title='Mar 2018 Agenda'>Mar</span></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/April-2018.pdf' title='Apr 2018 Agenda'>Apr-18-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/May-2018.pdf' title='May 2018 Agenda'>May-16-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Jun-2018.pdf' title='Jun 2018 Agenda'>Jun-20-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Jul-2018.pdf' title='Jul 2018 Agenda'>Jul-18-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Aug-2018.pdf' title='Aug 2018 Agenda'>Aug-15-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Sep-2018.pdf' title='Sep 2018 Agenda'>Sep-19-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Oct-2018.pdf' title='Oct 2018 Agenda'>Oct-17-2018</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Nov-2018.pdf' title='Nov 2018 Agenda'>Nov-21-2018</a></li>  
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2018/Dec-2018.pdf' title='Dec 2018 Agenda'>Dec-19-2018</a></li>   
+	        </ul>
+        </div>
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2017</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Jan-2017.pdf" title="January 2017 Agenda">Jan-18-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Feb-2017.pdf" title="February 2017 Agenda">Feb-15-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Mar-2017.pdf" title="March 2017 Agenda">Mar-15-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Apr-2017.pdf" title="April 2017 Agenda">Apr-19-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/May-2017.pdf" title="May 2017 Agenda">May-17-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Jun-2017.pdf" title="June 2017 Agenda">Jun-17-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Jul-2017.pdf" title="July 2017 Agenda">Jul-17-2017</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Aug-2017.pdf" title="August 2017 Agenda">Aug-17-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Sep-2017.pdf" title="September 2017 Agenda">Sep-20-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Oct-2017.pdf" title="October 2017 Agenda">Oct-20-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2017/Nov-2017.pdf" title="November 2017 Agenda">Nov-15-2017</a></li>
+        		<li class="list-group-item"><a target="_blank" href='specs/agenitem/agenda_results_pdf/2017/Dec-2017.pdf' title='December  2017 Agenda'>Dec-20-2017</a> </li>
+        	</ul>
+        </div>
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2016</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Jan-2016.pdf" title="January 2016 Agenda">Jan-20-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Feb-2016.pdf" title="February 2016 Agenda">Feb-17-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Mar-2016.pdf" title="March 2016 Agenda">Mar-16-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Apr-2016.pdf" title="April 2016 Agenda">Apr-20-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/May-2016.pdf" title="May 2016 Agenda">May-18-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Jun-2016.pdf" title="June 2016 Agenda">Jun-15-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Jul-2016.pdf" title="July 2016 Agenda">Jul-20-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Aug-2016.pdf" title="August 2016 Agenda">Aug-17-2016<a/></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Sep-2016.pdf" title="September 2016 Agenda">Sep-21-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Oct-2016.pdf" title="October 2016 Agenda">Oct-19-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Nov-2016.pdf" title="November 2016 Agenda">Nov-16-2016</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2016/Dec-2016.pdf" title="December 2016 Agenda">Dec-21-2016</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2015</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Jan-2015.pdf" title="January 2015 Agenda">Jan-28-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Feb-2015.pdf" title="February 2015 Agenda">Feb-25-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Mar-2015.pdf" title="March 2015 Agenda">Mar-25-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Apr-2015.pdf" title="April 2015 Agenda">Apr-22-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/May-2015.pdf" title="May 2015 Agenda">May-27-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Jun-2015.pdf" title="June 2015 Agenda">Jun-24-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Jul-2015.pdf" title="July 2015 Agenda">Jul-15-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Aug-2015.pdf" title="August 2015 Agenda">Aug-19-2015<a/></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Sep-2015.pdf" title="September 2015 Agenda">Sep-16-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Oct-2015.pdf" title="October 2015 Agenda">Oct-21-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Nov-2015.pdf" title="November 2015 Agenda">Nov-18-2015</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2015/Dec-2015.pdf" title="December 2015 Agenda">Dec-16-2015</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2014</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Jan-2014.pdf" title="January 2014 Agenda">Jan-29-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Feb-2014.pdf" title="February 2014 Agenda">Feb-26-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Mar-2014.pdf" title="March 2014 Agenda">Mar-26-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Apr-2014.pdf" title="April 2014 Agenda">Apr-23-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/May-2014.pdf" title="May 2014 Agenda">May-28-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Jun-2014.pdf" title="June 2014 Agenda">Jun-25-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Jul-2014.pdf" title="July 2014 Agenda">Jul-23-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Aug-2014.pdf" title="August 2014 Agenda">Aug-13-2014<a/></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Sep-2014.pdf" title="September 2014 Agenda">Sep-24-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Oct-2014.pdf" title="October 2014 Agenda">Oct-22-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Nov-2014.pdf" title="November 2014 Agenda">Nov-26-2014</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2014/Dec-2014.pdf" title="December 2014 Agenda">Dec-17-2014</a></li>
+        	</ul>
+        </div>
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2013</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Jan-2013.pdf" title="January 2013 Agenda">Jan-23-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Feb-2013.pdf" title="February 2013 Agenda">Feb-27-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Mar-2013.pdf" title="March 2013 Agenda">Mar-27-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Apr-2013.pdf" title="April 2013 Agenda">Apr-24-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/May-2013.pdf" title="May 2013 Agenda">May-22-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Jun-2013.pdf" title="June 2013 Agenda">Jun-26-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Jul-2013.pdf" title="July 2013 Agenda">Jul-24-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Aug-2013.pdf" title="August 2013 Agenda">Aug-21-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Sep-2013.pdf" title="September 2013 Agenda">Sep-25-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Oct-2013.pdf" title="October 2013 Agenda">Oct-23-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Nov-2013.pdf" title="November 2013 Agenda">Nov-27-2013</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2013/Dec-2013.pdf" title="December 2013 Agenda">Dec-18-2013</a></li>
+        	</ul>
+        </div>
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2012</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Jan-2012.pdf" title="January 2012 Agenda">Jan-25-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Feb-2012.pdf" title="February 2012 Agenda">Feb-22-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Mar-2012.pdf" title="March 2012 Agenda">Mar-28-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Apr-2012.pdf" title="April 2012 Agenda">Apr-25-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/May-2012.pdf" title="May 2012 Agenda">May-23-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Jun-2012.pdf" title="June 2012 Agenda">Jun-27-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Jul-2012.pdf" title="July 2012 Agenda">Jul-25-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Aug-2012.pdf" title="August 2012 Agenda">Aug-22-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Sep-2012.pdf" title="September 2012 Agenda">Sep-26-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Oct-2012.pdf" title="October 2012 Agenda">Oct-24-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Nov-2012.pdf" title="November 2012 Agenda">Nov-28-2012</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2012/Dec-2012.pdf" title="December 2012 Agenda">Dec-19-2012</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2011</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Jan-2011.pdf" title="January 2011 Agenda">Jan-26-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Feb-2011.pdf" title="February 2011 Agenda">Feb-23-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Mar-2011.pdf" title="March 2011 Agenda">Mar-23-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Apr-2011.pdf" title="April 2011 Agenda">Apr-27-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/May-2011.pdf" title="May 2011 Agenda">May-25-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Jun-2011.pdf" title="June 2011 Agenda">Jun-22-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Jul-2011.pdf" title="July 2011 Agenda">Jul-27-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Aug-2011.pdf" title="August 2011 Agenda">Aug-24-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Sep-2011.pdf" title="September 2011 Agenda">Sep-28-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Oct-2011.pdf" title="October 2011 Agenda">Oct-26-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Nov-2011.pdf" title="November 2011 Agenda">Nov-23-2011</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2011/Dec-2011.pdf" title="December 2011 Agenda">Dec-21-2011</a></li>
+
+        	</ul>
+        </div>
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2010</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Jan-2010.pdf" title="January 2010 Agenda">Jan-27-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Feb-2010.pdf" title="February 2010 Agenda">Feb-24-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Mar-2010.pdf" title="March 2010 Agenda">Mar-24-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Apr-2010.pdf" title="April 2010 Agenda">Apr-28-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/May-2010.pdf" title="May 2010 Agenda">May-26-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Jun-2010.pdf" title="June 2010 Agenda">Jun-23-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Jul-2010.pdf" title="July 2010 Agenda">Jul-28-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Aug-2010.pdf" title="August 2010 Agenda">Aug-25-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Sep-2010.pdf" title="September 2010 Agenda">Sep-28-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Oct-2010.pdf" title="October 2010 Agenda">Oct-27-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Nov-2010.pdf" title="November 2010 Agenda">Nov-24-2010</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2010/Dec-2010.pdf" title="December 2010 Agenda">Dec-15-2010</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2009</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Jan-2009.pdf" title="January 2009 Agenda">Jan-28-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Feb-2009.pdf" title="February 2009 Agenda">Feb-25-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Mar-2009.pdf" title="March 2009 Agenda">Mar-25-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Apr-2009.pdf" title="April 2009 Agenda">Apr-23-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/May-2009.pdf" title="May 2009 Agenda">May-28-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Jun-2009.pdf" title="June 2009 Agenda">Jun-24-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Jul-2009.pdf" title="July 2009 Agenda">Jul-22-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Aug-2009.pdf" title="August 2009 Agenda">Aug-19-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Sep-2009.pdf" title="September 2009 Agenda">Sep-23-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Oct-2009.pdf" title="October 2009 Agenda">Oct-21-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Nov-2009.pdf" title="November 2009 Agenda">Nov-18-2009</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2009/Dec-2009.pdf" title="December 2009 Agenda">Dec-16-2009</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2008</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Jan-2008.pdf" title="January 2008 Agenda">Jan-23-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Feb-2008.pdf" title="February 2008 Agenda">Feb-27-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Mar-2008.pdf" title="March 2008 Agenda">Mar-26-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Apr-2008.pdf" title="April 2008 Agenda">Apr-23-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/May-2008.pdf" title="May 2008 Agenda">May-28-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Jun-2008.pdf" title="June 2008 Agenda">Jun-25-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Jul-2008.pdf" title="July 2008 Agenda">Jul-23-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Aug-2008.pdf" title="August 2008 Agenda">Aug-20-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Sep-2008.pdf" title="September 2008 Agenda">Sep-24-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Oct-2008.pdf" title="October 2008 Agenda">Oct-22-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Nov-2008.pdf" title="November 2008 Agenda">Nov-25-2008</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2008/Dec-2008.pdf" title="December 2008 Agenda">Dec-17-2008</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2007</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Jan-2007.pdf" title="January 2007 Agenda">Jan-24-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Feb-2007.pdf" title="February 2007 Agenda">Feb-28-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Mar-2007.pdf" title="March 2007 Agenda">Mar-28-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Apr-2007.pdf" title="April 2007 Agenda">Apr-25-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/May-2007.pdf" title="May 2007 Agenda">May-23-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Jun-2007.pdf" title="June 2007 Agenda">Jun-27-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Jul-2007.pdf" title="July 2007 Agenda">Jul-25-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Aug-2007.pdf" title="August 2007 Agenda">Aug-29-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Sep-2007.pdf" title="September 2007 Agenda">Sep-26-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Oct-2007.pdf" title="October 2007 Agenda">Oct-24-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Nov-2007.pdf" title="November 2007 Agenda">Nov-28-2007</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2007/Dec-2007.pdf" title="December 2007 Agenda">Dec-19-2007</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2006</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Jan-2006.pdf" title="January 2006 Agenda">Jan-25-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Feb-2006.pdf" title="February 2006 Agenda">Feb-22-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Mar-2006.pdf" title="March 2006 Agenda">Mar-22-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Apr-2006.pdf" title="April 2006 Agenda">Apr-26-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/May-2006.pdf" title="May 2006 Agenda">May-24-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Jun-2006.pdf" title="June 2006 Agenda">Jun-28-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Jul-2006.pdf" title="July 2006 Agenda">Jul-26-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Aug-2006.pdf" title="August 2006 Agenda">Aug-30-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Sep-2006.pdf" title="September 2006 Agenda">Sep-27-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Oct-2006.pdf" title="October 2006 Agenda">Oct-25-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Nov-2006.pdf" title="November 2006 Agenda">Nov-22-2006</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2006/Dec-2006.pdf" title="December 2006 Agenda">Dec-20-2006</a></li>
+        	</ul>
+        </div>
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2005</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Jan-2005.pdf" title="January 2005 Agenda">Jan-26-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Feb-2005.pdf" title="February 2005 Agenda">Feb-23-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Mar-2005.pdf" title="March 2005 Agenda">Mar-23-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Apr-2005.pdf" title="April 2005 Agenda">Apr-27-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/May-2005.pdf" title="May 2005 Agenda">May-25-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Jun-2005.pdf" title="June 2005 Agenda">Jun-22-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Jul-2005.pdf" title="July 2005 Agenda">Jul-27-2005</a></li>
+
+                <!--
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Aug-2005.pdf" title="August 2005 Agenda">Aug-30-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Sep-2005.pdf" title="September 2005 Agenda">Sep-27-2005</a></li>
+                -->
+
+                <li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Aug-Sep-2005.pdf" title="August 2005 Agenda">Aug-Sep-2005</a></li>
+
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Oct-2005.pdf" title="October 2005 Agenda">Oct-26-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Nov-2005.pdf" title="November 2005 Agenda">Nov-23-2005</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2005/Dec-2005.pdf" title="December 2005 Agenda">Dec-21-2005</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2004</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Jan-2004.pdf" title="January 2004 Agenda">Jan-28-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Feb-2004.pdf" title="February 2004 Agenda">Feb-25-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Mar-2004.pdf" title="March 2004 Agenda">Mar-24-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Apr-2004.pdf" title="April 2004 Agenda">Apr-28-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/May-2004.pdf" title="May 2004 Agenda">May-26-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Jun-2004.pdf" title="June 2004 Agenda">Jun-23-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Jul-2004.pdf" title="July 2004 Agenda">Jul-28-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Aug-2004.pdf" title="August 2004 Agenda">Aug-25-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Sep-2004.pdf" title="September 2004 Agenda">Sep-22-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Oct-2004.pdf" title="October 2004 Agenda">Oct-27-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Nov-2004.pdf" title="November 2004 Agenda">Nov-24-2004</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2004/Dec-2004.pdf" title="December 2004 Agenda">Dec-15-2004</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2003</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Jan-2003.pdf" title="January 2003 Agenda">Jan-22-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Feb-2003.pdf" title="February 2003 Agenda">Feb-26-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Mar-2003.pdf" title="March 2003 Agenda">Mar-26-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Apr-2003.pdf" title="April 2003 Agenda">Apr-23-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/May-2003.pdf" title="May 2003 Agenda">May-28-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Jun-2003.pdf" title="June 2003 Agenda">Jun-25-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Jul-2003.pdf" title="July 2003 Agenda">Jul-30-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Aug-2003.pdf" title="August 2003 Agenda">Aug-27-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Sep-2003.pdf" title="September 2003 Agenda">Sep-24-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Oct-2003.pdf" title="October 2003 Agenda">Oct-22-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Nov-2003.pdf" title="November 2003 Agenda">Nov-26-2003</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2003/Dec-2003.pdf" title="December 2003 Agenda">Dec-17-2003</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2002</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Jan-2002.pdf" title="January 2002 Agenda">Jan-23-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Feb-2002.pdf" title="February 2002 Agenda">Feb-27-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Mar-2002.pdf" title="March 2002 Agenda">Mar-27-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Apr-2002.pdf" title="April 2002 Agenda">Apr-24-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/May-2002.pdf" title="May 2002 Agenda">May-22-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Jun-2002.pdf" title="June 2002 Agenda">Jun-26-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Jul-2002.pdf" title="July 2002 Agenda">Jul-24-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Aug-2002.pdf" title="August 2002 Agenda">Aug-28-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Sep-2002.pdf" title="September 2002 Agenda">Sep-25-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Oct-2002.pdf" title="October 2002 Agenda">Oct-23-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Nov-2002.pdf" title="November 2002 Agenda">Nov-27-2002</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2002/Dec-2002.pdf" title="December 2002 Agenda">Dec-18-2002</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2001</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Jan-2001.pdf" title="January 2001 Agenda">Jan-24-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Feb-2001.pdf" title="February 2001 Agenda">Feb-28-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Mar-2001.pdf" title="March 2001 Agenda">Mar-28-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Apr-2001.pdf" title="April 2001 Agenda">Apr-25-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/May-2001.pdf" title="May 2001 Agenda">May-23-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Jun-2001.pdf" title="June 2001 Agenda">Jun-27-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Jul-2001.pdf" title="July 2001 Agenda">Jul-25-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Aug-2001.pdf" title="August 2001 Agenda">Aug-15-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Sep-2001.pdf" title="September 2001 Agenda">Sep-26-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Oct-2001.pdf" title="October 2001 Agenda">Oct-24-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Nov-2001.pdf" title="November 2001 Agenda">Nov-28-2001</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2001/Dec-2001.pdf" title="December 2001 Agenda">Dec-19-2001</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">2000</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Jan-2000.pdf" title="January 2000 Agenda">Jan-26-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Feb-2000.pdf" title="February 2000 Agenda">Feb-23-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Mar-2000.pdf" title="March 2000 Agenda">Mar-22-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Apr-2000.pdf" title="April 2000 Agenda">Apr-26-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/May-2000.pdf" title="May 2000 Agenda">May-24-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Jun-2000.pdf" title="June 2000 Agenda">Jun-28-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Jul-2000.pdf" title="July 2000 Agenda">Jul-26-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Aug-2000.pdf" title="August 2000 Agenda">Aug-23-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Sep-2000.pdf" title="September 2000 Agenda">Sep-27-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Oct-2000.pdf" title="October 2000 Agenda">Oct-25-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Nov-2000.pdf" title="November 2000 Agenda">Nov-22-2000</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/2000/Dec-2000.pdf" title="December 2000 Agenda">Dec-20-2000</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">1999</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Jan-1999.pdf" title="January 1999 Agenda">Jan-27-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Feb-1999.pdf" title="February 1999 Agenda">Feb-24-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Mar-1999.pdf" title="March 1999 Agenda">Mar-24-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Apr-1999.pdf" title="April 1999 Agenda">Apr-28-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/May-1999.pdf" title="May 1999 Agenda">May-26-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Jun-1999.pdf" title="June 1999 Agenda">Jun-23-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Jul-1999.pdf" title="July 1999 Agenda">Jul-28-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Aug-1999.pdf" title="August 1999 Agenda">Aug-25-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Sep-1999.pdf" title="September 1999 Agenda">Sep-22-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Oct-1999.pdf" title="October 1999 Agenda">Oct-27-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Nov-1999.pdf" title="November 1999 Agenda">Nov-24-1999</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1999/Dec-1999.pdf" title="December 1999 Agenda">Dec-22-1999</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">1998</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Jan-1998.pdf" title="January 1998 Agenda">Jan-28-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Feb-1998.pdf" title="February 1998 Agenda">Feb-25-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Mar-1998.pdf" title="March 1998 Agenda">Mar-25-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Apr-1998.pdf" title="April 1998 Agenda">Apr-22-1998</a></li>
+        		<li class="list-group-item disabled"><span        data-href="specs/agenitem/agenda_results_pdf/1998/May-1998.pdf" title="May 1998 Agenda">May-26-1998</span></li>
+        		<li class="list-group-item disabled"><span        data-href="specs/agenitem/agenda_results_pdf/1998/Jun-1998.pdf" title="June 1998 Agenda">Jun-23-1998</span></li>
+        		<li class="list-group-item disabled"><span        data-href="specs/agenitem/agenda_results_pdf/1998/Jul-1998.pdf" title="July 1998 Agenda">Jul-28-1998</span></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Aug-1998.pdf" title="August 1998 Agenda">Aug-26-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Sep-1998.pdf" title="September 1998 Agenda">Sep-23-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Oct-1998.pdf" title="October 1998 Agenda">Oct-28-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Nov-1998.pdf" title="November 1998 Agenda">Nov-25-1998</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1998/Dec-1998.pdf" title="December 1998 Agenda">Dec-16-1998</a></li>
+        	</ul>
+        </div>
+
+
+
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">1997</li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Jan-1997.pdf" title="January 1997 Agenda">Jan-22-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Feb-1997.pdf" title="February 1997 Agenda">Feb-26-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Mar-1997.pdf" title="March 1997 Agenda">Mar-26-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Apr-1997.pdf" title="April 1997 Agenda">Apr-23-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/May-1997.pdf" title="May 1997 Agenda">May-28-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Jun-1997.pdf" title="June 1997 Agenda">Jun-25-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Jul-1997.pdf" title="July 1997 Agenda">Jul-23-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Aug-1997.pdf" title="August 1997 Agenda">Aug-27-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Sep-1997.pdf" title="September 1997 Agenda">Sep-24-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Oct-1997.pdf" title="October 1997 Agenda">Oct-22-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Nov-1997.pdf" title="November 1997 Agenda">Nov-26-1997</a></li>
+        		<li class="list-group-item"><a target="_blank" href="specs/agenitem/agenda_results_pdf/1997/Dec-1997.pdf" title="December 1997 Agenda">Dec-17-1997</a></li>
+        	</ul>
+        </div>
+
+
+
+
+
+
+
+        <!--
+        <div class="col-md-2">
+        	<ul class="list-group">
+        	    <li class="list-group-item active">Previous Years</li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2009-01.html" title="January 2009 Agenda">2009</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2008-01.html" title="January 2008 Agenda">2008</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2007-01.html" title="January 2007 Agenda">2007</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2006-01.html" title="January 2006 Agenda">2006</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2005-01.html" title="January 2005 Agenda">2005</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2004-01.html" title="January 2004 Agenda">2004</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2003-01.html" title="January 2003 Agenda">2003</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2002-01.htm" title="January 2002 Agenda">2002</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2001-01.htm" title="January 2001 Agenda">2001</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/2000-01.htm" title="January 2000 Agenda">2000</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/99-01.htm" title="January 1999 Agenda">1999</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/98-01.htm" title="January 1998 Agenda">1998</a></li>
+            	<li class="list-group-item"><a target="_blank" href="specs/agenitem/97-01.htm" title="January 1997 Agenda">1997</a></li>
+        	</ul>
+        </div>
+        -->
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">NOTICE PURSUANT TO THE SUNSHINE ACT</h3>
+
+        	 <!--
+             	<p>Notice is hereby given that the City of Philadelphia Civil Service Commission will hold its regular monthly meetings to consider a formal agenda and other matters presented by the Director of Human Resources and his staff at 10:00 a.m. on the third Wednesday of every month from July through December, 2016, in Conference Room B, 16th Floor, Municipal Services Building, 1401 John F. Kennedy Boulevard.</p>
+        		<p>The Civil Service Commission will hold public hearings on employee appeals in accordance with Civil Service Regulations on Tuesdays and Wednesdays at 10:00 a.m. from July 12, 2016 through December 2016, in Conference Room B, 16th Floor, Municipal Services Building.</p>
+        		<p>The Civil Service Commission will meet in Executive Session immediately following the public hearings on employee appeals to deliberate over those appeals and to consider other matters as defined in Section 8 of the Sunshine Act, in the Commission Office, 1640 Municipal Services Building.</p>
+        		<p>The Civil Service Commission will hold meetings to consider the approval of administrative matters at 9:30 a.m. on Wednesdays from July 13, 2016 through December 2016, in the Commission Office, 1640 Municipal Services Building.</p>
+            -->
+
+        	<!--
+        	    <p> Notice is hereby given that the City of Philadelphia Civil Service Commission will hold its regular monthly meetings to consider a formal agenda and other matters presented by the Director of Human Resources and his staff at 10:00 a.m. on the third Wednesday of every month from July 2017 through December 2017, in Conference Room B, 16th Floor, Municipal Services Building, 1401 John F. Kennedy Boulevard.</p>
+        		<p> The Civil Service Commission will hold public hearings on employee appeals in accordance with Civil Service Regulations on Tuesdays and Wednesdays at 10:00 a.m. from July 2017 through December 2017, in Conference Room B, 16th Floor, Municipal Services Building.  </p>
+        		<p> The Civil Service Commission will meet in Executive Session immediately following the public hearings on employee appeals to deliberate over those appeals and to consider other matters as defined in Section 8 of the Sunshine Act, in the Commission Office, 1640 Municipal Services Building.</p>
+        		<p> The Civil Service Commission will hold meetings to consider the approval of administrative matters at 9:30 a.m. on Wednesdays from July 2017 through December 2017, in the Commission Office, 1640 Municipal Services Building. </p>
+        	-->
+
+    	    <!-- UPDATED January-23-2018 -->
+    		<p> Notice is hereby given that the City of Philadelphia Civil Service Commission will hold its regular monthly meetings to consider a formal agenda and other matters presented by the Director of Human Resources and his staff at 10:00 a.m. on the third Wednesday of every month from January 2018 through June 2018, in Conference Room B, 16th Floor, Municipal Services Building, 1401 John F. Kennedy Boulevard.</p>
+
+    		<p> The Civil Service Commission will hold public hearings on employee appeals in accordance with Civil Service Regulations on Tuesdays and Wednesdays at 10:00 a.m., from January 2018 through June 2018, in Conference Room B, 16th Floor, Municipal Services Building.</p>
+
+    		<p> The Civil Service Commission will meet in Executive Session immediately following the public hearings on employee appeals to deliberate over those appeals and to consider other matters as defined in Section 8 of the Sunshine Act, in the Commission Office, 1640 Municipal Services Building.</p>
+
+    		<p> The Civil Service Commission will hold meetings to consider the approval of administrative matters at 9:30 a.m. on Wednesdays from January 2018 through June 2018, in the Commission Office, 1640 Municipal Services Building. </p>
+
+            <br />
+	        <blockquote>
+	            Doris A. Smith<br />
+	            Chairperson<br />
+	            Civil Service Commission
+	        </blockquote>
+
+        </div>
+    </div>
+
+</div>
+			  <!-- pjax view content  ends here-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container"><div class="row footer-row"><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Contact OHR</h3><ul class="list-unstyled"><li><a href="Contact.html" class="pjax-link text-info">Contact page</a></li><li><label>Email:</label> <a href="mailto:hrhelpdesk@phila.gov" class="pjax-link text-info">hrhelpdesk@phila.gov</a></li><li><label>Phone:</label> 215-686-0880</li></ul></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Quick Links</h3><ul class="list-unstyled"><li><a href="about.html" class="pjax-link text-info">About</a></li><li><a href="Contact.html" class="pjax-link text-info">Contact page</a></li><li><a href="FAQs.html" class="pjax-link text-info">FAQs</a></li><li><a href="https://phila.peopleadmin.com/login" class="text-info" target="_blank">Login</a> / <a href="https://phila.peopleadmin.com/user/new" class="text-info" target="_blank"> Create Account</a></li><li><a href="jobs/CivilServiceJobOpps.html" class="pjax-link text-info">Civil Service Job Opportunities</a></li><li><a href="Jobs/NonCivilServiceJobOpps.html" class="pjax-link text-info">Non-Civil Service Job Opportunities</a></li><li><a href="specs/JobInterestForm.html" class="pjax-link text-info">Job Interest Notifications</a></li></ul></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3"><h3 class="text-muted">Mission Statement</h3><p class="text-info">The Office of Human Resources works with all agencies of the City government to recruit, develop and retain a qualified and diverse workforce.</p></div><div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3" ><div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left"><h3 class="text-muted">Connect with OHR</h3><div class="social-media-links"><a target="_blank" href="https://www.facebook.com/CityofPhiladelphiaJOBS" class="iconFacebook" title="Facebook"> <span class="fa-stack fa-lg "> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="https://twitter.com/PHLCityJobs" class="iconTwitter" title="Twitter"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="https://ohrphila.wordpress.com/" class="iconWordpress" title="Wordpress"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i> </span> </a><a target="_blank" href="http://www.linkedin.com/pub/city-of-philadelphia-jobs/7a/3a0/710/" class="iconLinkedin" title="Linkedin"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x "></i> <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a></div></div></div></div></div></div></div>
+    </footer>
+
+
+
+  </body>
+</html>

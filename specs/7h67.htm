@@ -1,0 +1,665 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>BUILDING SERVICES MANAGER</title>
+
+<style>
+body{
+margin:3%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"CG Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+h1
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.5in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:-4.5in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h3
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;
+	font-weight:normal;
+	text-decoration:underline;}
+h4
+	{margin-top:0in;
+	margin-right:4.5pt;
+	margin-bottom:0in;
+	margin-left:-.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+h5
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:-.5in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	layout-grid-mode:line;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"CG Times",serif;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:-.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-.5in;
+	font-size:12.0pt;
+	font-family:"Univers (W1)",sans-serif;
+	letter-spacing:-.1pt;
+	layout-grid-mode:line;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:line;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:both;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                                                                                                                                  7H67</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                                                                                                           PAY
+RANGE: N22</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h2><span style='font-family:"Arial",sans-serif'>BUILDING SERVICES MANAGER</span></h2>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>GENERAL DEFINITION</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='margin-right:0in'><span style='font-family:
+"Arial",sans-serif'>This is administrative work directing building maintenance
+and repair services in municipal buildings and facilities.  The employees in
+this class, through subordinate trades supervisors, direct the activities of a
+large staff engaged in building maintenance and repair services.  This class
+differs from other building maintenance trades classes by the responsibility
+for directing a large staff of trades workers, and the scope and diversity of
+services provided in a city-wide maintenance program.  Work includes
+coordinating support work for special City events.  Contact with division
+staff, departmental administrators and representatives of City agencies and departments
+in order to provide maintenance and repair services, is significant to the
+work.  Work is performed under the direction of an administrative superior.  </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>ALLOCATING FACTORS</span></u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>:   (The following
+conditions must be met for a position to be allocated to this class.)</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:.5in'><span style='font-family:
+"Arial",sans-serif'>•           This is a three position class located in the Department
+of Public Property.</span></p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:.5in'><span style='font-family:
+"Arial",sans-serif'>•           The positions must direct building maintenance
+and repair services in municipal buildings and facilities on a city-wide
+basis.  </span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif'>•           The positions must, through
+subordinate trades supervisors, direct the activities of a large staff engaged
+in building maintenance and repair services.</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>TYPICAL
+EXAMPLES OF WORK</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'> (ILLUSTRATIVE ONLY)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><s><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></s></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            Directs,
+through subordinate trades supervisors, the activities of a large staff of
+trades workers engaged in building maintenance and repair services; reviews
+service requests to determine and prioritize routine and emergency services;
+meets with subordinate trades supervisors to discuss and assign repair
+maintenance projects; contacts representatives of City agencies and departments
+to discuss repair and maintenance services and date to initiate and complete
+work; reviews and revises preventive maintenance program;  prepares maintenance
+and test schedules for City-wide maintenance and repair; ensures adequate
+staffing of the trade shops; coordinates trade shops within the division to
+perform repair and maintenance services; prioritizes projects; may delegate
+duties and responsibilities to subordinate trades supervisors.  </span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            Sets
+and monitors service level agreements for programs; communicates service levels
+with customers; engages customers and solicits feedback to monitor and evaluate
+service level of contracts and services related to municipal buildings;
+recommends solutions to customer feedback and implements changes as necessary
+to meet performance standards set by the department. </span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            Coordinates
+renovation projects under city-wide maintenance program; identifies, through
+subordinate trades supervisors, the nature and complexity of projects; contacts
+engineering division of the department for project plans and specifications;
+oversees the activities of staff and contractors engaged in such projects.  </span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            May
+coordinate support work for special City events; meets with representatives of
+City agencies and departments to discuss special event preparations; recommends
+changes in preparation plans based on available resources; arranges for the
+transportation of special event materials and equipment such as audio speakers
+and platform decorations; prepares estimate of labor and material used in
+special event celebrations.  </span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            Visits
+job sites to monitor and ensure work progress; discusses maintenance and repair
+service projects with subordinate trades supervisors; interprets building plans
+and specifications as necessary.  </span></p>
+
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>            Maintains
+records of unit activities such as work received and completed by subordinate
+staff; prepares and compiles reports of material parts used in repair and
+maintenance services; approves requisitions for supplies;</span> <span
+style='font-family:"Arial",sans-serif'>calculates costs of projects and
+services described above; prepares staffing plan for review; prepares preliminary
+budget for maintenance and repair services described above; presents
+performance metrics for review.  </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><a
+name="_Hlk24965068"><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>                                    Assists in the
+resolution of personnel and contract problems.  </span></a></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                                    Performs
+related work as required.</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>Building Maintenance
+Assignment</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText2><span style='font-family:"Arial",sans-serif'>            Directs,
+through subordinate trades supervisors, the activities of trades workers
+engaged in carpentry; locksmithing, upholstery, rigging, painting, masonry,
+roofing, general maintenance and labor operations.  </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>Mechanical/Electrical
+Assignment</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText2><span style='font-family:"Arial",sans-serif'>            Directs,
+through subordinate trades supervisors, the activities of trades workers
+engaged in maintaining and repairing electrical, plumbing, heating,
+ventilation, air conditioning and refrigeration systems.  </span></p>
+
+<p class=MsoBodyText2><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>Generator Assignment</span></h1>
+
+<p class=MsoBodyText2><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText2 style='text-indent:.5in'><span style='font-family:"Arial",sans-serif'>Directs,
+through subordinate trades supervisors, the activities of trades workers in </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>the
+Generator Shop;  manages the on-site elevator contractors and ensures that the
+contract requirements are being met; manages the Work Order Management System,
+overseeing implementation, detailing training needs, installations, and
+developing business practices; directs review  of  security system requests and
+access; improves the access levels that are designated in the system so that
+employees and visitors are given the appropriate access;  directs maintenance
+and repair to all security equipment in City Hall and the Triplex.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+line-height:normal'><i><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></i></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>REQUIRED KNOWLEDGE, SKILLS AND
+ABILITIES</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>KNOWLEDGE
+OF</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:.5in;text-indent:-.25in'><s><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></s><span style='font-family:"Arial",sans-serif'>the practices,
+methods, materials and tools commonly used in building services<s> </s></span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>building services management
+techniques</span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in'><s><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></s><span style='font-family:"Arial",sans-serif'>maintenance and
+scheduling procedures essential to the upkeep of large buildings, groups of
+buildings and other structural facilities</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>the occupational
+hazards and safety precautions involved in building service activities in the
+area of assignment</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-indent:-.25in'><span
+style='font-size:12.0pt;font-family:Symbol;letter-spacing:-.1pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>supervisory methods and techniques</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>documentation needed
+to effectively implement a wide-scale building services programs</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>standard computer
+software packages as required by assignment</span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.5in'><u><span
+style='font-family:"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><u><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>ABILITY
+TO</span></u><span style='font-size:12.0pt;font-family:"Arial",sans-serif;
+letter-spacing:-.1pt'>:</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText2 style='margin-top:0in;margin-right:-4.5pt;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt'><span style='font-size:16.0pt;
+font-family:"Arial",sans-serif'>•</span><span style='font-family:"Arial",sans-serif'>    requisition
+and specify materials, tools and supplies essential to building services</span></p>
+
+<p class=MsoBodyText2 style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt'><span style='font-size:16.0pt;
+font-family:"Arial",sans-serif'>•</span><span style='font-family:"Arial",sans-serif'>    plan
+and coordinate the work of a diverse group of trades, semi-skilled and laboring
+employees engaged in special events and maintenance work</span></p>
+
+<p class=MsoBlockText style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in'><span
+style='font-size:16.0pt;font-family:"Arial",sans-serif'>•</span><span
+style='font-family:"Arial",sans-serif'>    prepare estimates for equipment, materials
+and manpower required for special events, service contracts, and maintenance
+activities</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>prepare, interpret
+and utilize technical sketches and plans</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>prepare reports and
+maintain records</span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>establish and
+maintain effective working relationships with associates </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif;letter-spacing:-.1pt'>MINIMUM ACCEPTABLE
+TRAINING AND EXPERIENCE</span></u><span style='font-size:12.0pt;font-family:
+"Arial",sans-serif;letter-spacing:-.1pt'>  (The following statement represents
+the minimum training and experience standards which will be used to admit or
+reject applicants for tests.  Applications submitted by candidates for this
+class will be reviewed based on training and experience requirements as
+approved on 3/10.)</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>EDUCATION</span><span
+style='font-family:"Arial",sans-serif;text-decoration:none'>:</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>                        Education
+equivalent to completion of the twelfth school grade.  </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>AND</span></h1>
+
+<h1><span style='font-family:"Arial",sans-serif'>GENERAL EXPERIENCE</span><span
+style='font-family:"Arial",sans-serif;text-decoration:none'>:</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>            Six
+years of building repair experience in a major building or group of buildings. 
+</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>AND</span></h1>
+
+<h1><span style='font-family:"Arial",sans-serif'>SPECIFIC EXPERIENCE</span><span
+style='font-family:"Arial",sans-serif;text-decoration:none'>:</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText>            Two years of experience supervising skilled
+trades personnel, one year of which shall have been at the second supervisory
+level. </p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>            </span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><u><span style='font-family:
+"Arial",sans-serif'>OR </span></u></p>
+
+<p class=MsoBodyText2 style='margin-right:0in'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText2 style='margin-right:0in;text-indent:.5in'><span
+style='font-family:"Arial",sans-serif'>Any equivalent combination of education
+and experience determined to be acceptable by the Office of Human Resources,
+which has included the specific experience and completion of the twelfth school
+grade as an educational minimum.  </span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>PHYSICAL AND MEDICAL
+REQUIREMENTS</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>            Ability
+to physically perform the duties and to work in the environmental conditions
+required of a position in this class.</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h1><span style='font-family:"Arial",sans-serif'>LICENSES, REGISTRATIONS AND/OR
+CERTIFICATES</span></h1>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent3 style='margin-left:0in'><span style='font-family:
+"Arial",sans-serif'>            Possession of a valid proper class motor
+vehicle operator's license as issued by the Commonwealth of Pennsylvania prior to appointment and during tenure of appointment as a Building Services
+Manager.</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>&nbsp;</span></p>
+
+<h4 align=right style='margin-left:0in;text-align:right'><span
+style='font-family:"Arial",sans-serif;font-weight:normal'>                                                                                                                           Class
+Established: </span></h4>
+
+<h4 align=right style='margin-left:0in;text-align:right'><span
+style='font-family:"Arial",sans-serif;font-weight:normal'>CSC - 8/63</span></h4>
+
+<h4 align=right style='margin-left:0in;text-align:right'><span
+style='font-family:"Arial",sans-serif;font-weight:normal'>Ad. Board - 9/63</span></h4>
+
+<h5 style='margin-left:0in'><span style='font-family:"Arial",sans-serif'>Spec.
+Revision: </span></h5>
+
+<h5 style='margin-left:0in'><span style='font-family:"Arial",sans-serif;
+font-weight:normal'>CSC - 9/93; Ad. Board - 10/93</span></h5>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Spec Revision: </span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC - 2/10; Ad. Board  - 3/10</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif'>Latest Spec Revision: </span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>CSC – 9/19; Ad. Board  - 10/19</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:-.5in'><span style='font-size:12.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>JH</span></p>
+
+</div>
+
+</body>
+
+</html>
