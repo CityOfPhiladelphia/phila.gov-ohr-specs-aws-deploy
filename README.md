@@ -10,7 +10,7 @@ The OHR team maintains a large number of .html pages that are generated from Wor
 2. After a successful deploy to staging (e.g. https://staging-www.phila.gov/personnel/specs/5f52.htm) create Pull Request into `main`. 
 3. Merge pull request to publish file(s). 
 
-Github is a tool that allows for version management of documents. We will be utilizing this tool for handling documents for both OHR and BOE at the following links:
+Github is a tool that allows for version management of documents. We will be utilizing this tool for handling documents for OHR at the following link:
 
 https://github.com/CityOfPhiladelphia/phila.gov-ohr-specs-aws-deploy/
 
