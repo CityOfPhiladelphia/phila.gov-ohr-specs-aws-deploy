@@ -79,4 +79,4 @@ After adding, modifying, or deleting a file, you can confirm that your changes h
 
 ## Review files on production
 
-After adding, modifying, or deleting a file, you can confirm that your changes have been applied by reviewing in the staging phila.gov environment. For this repository, all files are uploaded at the top directory of https://www.phila.gov/personnel/spec/ followed by the name of the file.
+After adding, modifying, or deleting a file, you can confirm that your changes have been applied by reviewing in the staging phila.gov environment. For this repository, all files are uploaded at the top directory of https://www.phila.gov/departments/office-of-human-resources/jobs/job-class-specifications/#/ followed by the name of the file.
