@@ -3,12 +3,9 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>REAL PROPERTY EVALUATOR 1</title>
+<title>2D16 - REAL PROPERTY EVALUATOR 1</title>
 
 <style>
-body{
-margin:3%;
-}
 <!--
  /* Font Definitions */
  @font-face
@@ -21,25 +18,24 @@ margin:3%;
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
-	{font-family:"Univers \(W1\)";}
+	{font-family:"Univers \(W1\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
 @font-face
 	{font-family:"Segoe UI";
 	panose-1:2 11 5 2 4 2 4 2 2 3;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin:0in;
-	margin-bottom:.0001pt;
 	font-size:12.0pt;
 	font-family:Courier;
 	layout-grid-mode:line;}
 h1
 	{mso-style-link:"Heading 1 Char";
 	margin:0in;
-	margin-bottom:.0001pt;
 	text-align:justify;
 	page-break-after:avoid;
 	font-size:12.0pt;
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
 	layout-grid-mode:line;
 	font-weight:normal;
@@ -47,12 +43,11 @@ h1
 h3
 	{mso-style-link:"Heading 3 Char";
 	margin:0in;
-	margin-bottom:.0001pt;
 	text-align:center;
 	line-height:150%;
 	page-break-after:avoid;
 	font-size:12.0pt;
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
 	layout-grid-mode:line;
 	font-weight:normal;
@@ -60,84 +55,35 @@ h3
 p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
 	{mso-style-link:"Body Text Char";
 	margin:0in;
-	margin-bottom:.0001pt;
 	text-align:justify;
 	font-size:12.0pt;
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
-	layout-grid-mode:line;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:9.0pt;
-	font-family:"Segoe UI",sans-serif;
-	layout-grid-mode:line;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:Courier;
-	layout-grid-mode:line;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:Courier;
-	layout-grid-mode:line;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:Courier;
-	layout-grid-mode:line;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:Courier;
 	layout-grid-mode:line;}
 span.Heading1Char
 	{mso-style-name:"Heading 1 Char";
 	mso-style-link:"Heading 1";
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
 	layout-grid-mode:both;
 	text-decoration:underline;}
 span.Heading3Char
 	{mso-style-name:"Heading 3 Char";
 	mso-style-link:"Heading 3";
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
 	layout-grid-mode:both;
 	text-decoration:underline;}
 span.BodyTextChar
 	{mso-style-name:"Body Text Char";
 	mso-style-link:"Body Text";
-	font-family:"Univers \(W1\)";
+	font-family:"Univers (W1)",sans-serif;
 	letter-spacing:-.15pt;
 	layout-grid-mode:both;}
 span.wT6
 	{mso-style-name:wT6;}
 span.wT50
 	{mso-style-name:wT50;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Segoe UI",sans-serif;
-	layout-grid-mode:both;}
 .MsoChpDefault
 	{font-family:"Calibri",sans-serif;}
 .MsoPapDefault
@@ -145,7 +91,7 @@ span.BalloonTextChar
 	line-height:107%;}
  /* Page Definitions */
  @page WordSection1
-	{size:8.5in 11.0in;
+	{size:8.5in 14.0in;
 	margin:1.0in 1.0in 1.0in 1.0in;}
 div.WordSection1
 	{page:WordSection1;}
@@ -159,40 +105,32 @@ ul
 
 </head>
 
-<body lang=EN-US>
+<body lang=EN-US style='word-wrap:break-word'>
 
 <div class=WordSection1>
 
-<p class=MsoNormal align=right style='line-height:115% !msorm;text-align:right'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>2D16</span></span></p>
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>2D16</span></p>
 
-<p class=MsoNormal align=right style='line-height:115% !msorm;text-align:right'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>PAY RANGE:  EP13</span></span></p>
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>PAY RANGE:  EP13</span></p>
 
-<p class=MsoNormal align=right style='line-height:115% !msorm;text-align:right'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<h3 style='line-height:115% !msorm;line-height:normal'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif'>REAL
-PROPERTY EVALUATOR 1</span></span></h3>
+<h3 style='line-height:normal'><span style='font-family:"Arial",sans-serif'>REAL
+PROPERTY EVALUATOR 1</span></h3>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>GENERAL DEFINITION</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>GENERAL DEFINITION</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoBodyText style='line-height:115% !msorm'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif'>            This
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>          This
 is advanced training level real property appraisal, assessment and analysis
 work. Employees in this class learn to use a variety of appraisal approaches,
 methods and techniques used to estimate the fair market value of residential,
@@ -201,53 +139,44 @@ properties in accordance with laws, ordinances and assessment industry
 standards. Work includes learning the proper techniques for research, data
 collection and compilation, on-site property inspection and statistical
 analysis. Work assignments expand in complexity and scope as the employee gains
-experience.  The employee works under the supervision of a Real Property
-Evaluation Supervisor.</span></span></p>
+experience.  The employee works under the supervision of a Real Property Evaluation
+Supervisor.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:148.5pt;
-text-align:justify;text-indent:-148.5pt'><span style='font-family:"Univers \(W1\)" !msorm'><u><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>ALLOCATION
-FACTORS:</span></u></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>  (The following
-conditions must be met for a position to be allocated to this class.)</span></span></p>
+<p class=MsoNormal style='margin-left:148.5pt;text-align:justify;text-indent:
+-148.5pt'><u><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>ALLOCATION
+FACTORS:</span></u><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.15pt'>  (The following conditions must be met for a position to be allocated
+to this class.)</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>1.         The
-positions must work in Office of Property Assessment.</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>1.       The
+positions must work in Office of Property Assessment.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>2.         The
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>2.       The
 positions must work at the advanced training level learning a variety of
-recognized appraisal and assessment approaches used to esti­mate the fair
-market value of property in a uniform manner.</span></span></p>
+recognized appraisal and assessment approaches used to estimate the fair market
+value of property in a uniform manner.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>TYPICAL EXAMPLES OF WORK</span></u></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'> (ILLUSTRATIVE ONLY)</span></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>TYPICAL EXAMPLES OF WORK</span></u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> (ILLUSTRATIVE
+ONLY)</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Receives training in the proper methods and
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Receives training in the proper methods and
 techniques to conduct annual assessments and valuations used to determine the
 fair market value of real property including residential properties,
 apartments, condominiums, multi-family dwellings, low-income housing, office
@@ -257,18 +186,16 @@ utilities, railroads, vacant land, and right-of-ways in accordance with laws,
 ordinances, departmental policies, and assessment industry standards; receives
 training in the use of a consistent methodology for the fair, uniform and
 equitable valuation of properties for taxation purposes across like properties
-in the city.</span></span></p>
+in the city.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Learns to determine the appropriate
-valuation methods and techniques based on the property type and usage such as
-the sales comparison/ market value approach, the income capitalization approach
-and the cost approach.</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Learns to determine the appropriate valuation
+methods and techniques based on the property type and usage such as the sales
+comparison/ market value approach, the income capitalization approach and the
+cost approach.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Learns to review and interpret plot plans,
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Learns to review and interpret plot plans,
 building plans, maps and exterior photography to research and collect data on
 properties; learns to review building, construction, and land use permits from
 the Department of Licenses and Inspections to determine the need for property
@@ -280,564 +207,439 @@ document the condition of a property and surrounding area using digital
 photography and record keeping techniques; compiles data and research for each
 property being assessed; maintains thorough and organized records of each
 property account for which they are responsible; assigns or updates building
-codes, condition codes, square footage, amenities and other features.</span></span></p>
+codes, condition codes, square footage, amenities and other features.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Learns to interpret deeds concerning
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Learns to interpret deeds concerning
 subdivisions and consolidations for new property lines or learns how to analyze
 properties and determine eligibility of properties that may be considered
 exempt from real estate taxes under state statutes and city ordinances; learns
 to make recommendations regarding the classification of property that has
-changed function or purpose.</span></span></p>
+changed function or purpose.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            </span></span><span class=wT50><span
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          </span><span class=wT50><span
 style='font-family:"Arial",sans-serif'>Learns to use computerized assisted mass
 appraisal systems; learns to conduct statistical analysis using computer
 software packages; follows </span></span><span class=wT6><span
 style='font-family:"Arial",sans-serif'>established standards for the consistent
-treatment of property owners in the city.<span style='font-family:Courier !msorm'>
-</span></span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Accompanies
-higher-level evaluators to meetings with taxpayers and/or their representa­tives
-to discuss property's market value and assessment and the approaches, methods
-and techniques used in deriving assessments; assists higher-level evaluators in
-preparing written reports documenting evidence and justification for appealed
-assessments and exemptions.</span></span></p>
+treatment of property owners in the city. </span></span><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>Accompanies higher-level evaluators
+to meetings with taxpayers and/or their representa­tives to discuss property's
+market value and assessment and the approaches, methods and techniques used in
+deriving assessments; assists higher-level evaluators in preparing written
+reports documenting evidence and justification for appealed assessments and
+exemptions.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Participates in special projects and
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Participates in special projects and
 departmental initiatives; attends training sessions to learn new appraisal and
-assessment techniques.</span></span></p>
+assessment techniques.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            Performs related work as required.</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Performs related work as required.</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>REQUIRED KNOWLEDGE, SKILLS AND ABILITIES</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>REQUIRED KNOWLEDGE, SKILLS AND ABILITIES</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>KNOWLEDGE OF:</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>KNOWLEDGE OF:</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the approaches,
-methods and techniques of determining fair market value of real property</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the
+approaches, methods and techniques of determining fair market value of real
+property</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the laws,
-ordinances and assessment industry standards relating to real property
-assessment</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the
+laws, ordinances and assessment industry standards relating to real property
+assessment</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>building
-construction methods and materials and their costs</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>building
+construction methods and materials and their costs</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the sales
-comparison approach to value</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the
+sales comparison approach to value</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>real estate
-practices and terminology</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>real
+estate practices and terminology</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the sources of
-real property information</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the
+sources of real property information</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>assessment record
-maintenance procedures</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>assessment
+record maintenance procedures</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>uniform standards
-of professional appraisal practice (USPAP)</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>uniform
+standards of professional appraisal practice (USPAP)</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>basic research
-techniques</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>basic
+research techniques</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>basic statistics</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>basic
+statistics</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>standard computer
-software, such as MS Word and Excel</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>standard
+computer software, such as MS Word and Excel</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>SKILL IN:</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>SKILL IN:</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.25in;text-align:
-justify;text-indent:-.25in'><span style='font-family:Symbol;letter-spacing:
--.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>the use of
-personal computers</span></span></p>
+personal computers</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>ABILITY TO:</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>ABILITY TO:</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn how to apply
-sales comparison, income capitalization, and cost approaches to property
-evaluation</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+how to apply sales comparison, income capitalization, and cost approaches to
+property evaluation</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn how to write
-evaluation, appeal and exemption reports</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+how to write evaluation, appeal and exemption reports</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn how to
-utilize a computer to review, correct and analyze data and estimate market
-values</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+how to utilize a computer to review, correct and analyze data and estimate
+market values</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>make real property
-related mathematical computations</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>make
+real property related mathematical computations</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>interpret various
-real estate information</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>interpret
+various real estate information</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>obtain appraisal
-related information from recorded documents, plot plans, building plans, deeds,
-maps, and exterior photography</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>obtain
+appraisal related information from recorded documents, plot plans, building
+plans, deeds, maps, and exterior photography</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn to prepare
-weekly reports on field and office work</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+to prepare weekly reports on field and office work</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn to apply
-statistical models and use computer software packages to perform statistical
-calculations and create reports that employ the use of assessment related
-computer software</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+to apply statistical models and use computer software packages to perform
+statistical calculations and create reports that employ the use of assessment
+related computer software</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn to use
-assessment related computer software</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+to use assessment related computer software</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>establish and
-maintain effective working relationships with associates, supervisors, other
-City employees, outside agencies, property owners and the public</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>establish
+and maintain effective working relationships with associates, supervisors,
+other City employees, outside agencies, property owners and the public</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>gather and analyze
-information</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>gather
+and analyze information</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>communicate
-effectively, both orally and in writing</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>communicate
+effectively, both orally and in writing</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn to interpret
-and apply laws, regulations, policies, standards or procedures to real property
-specific issues</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+to interpret and apply laws, regulations, policies, standards or procedures to
+real property specific issues</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>maintain and
-follow ethical and professional standards</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>maintain
+and follow ethical and professional standards</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn more
-advanced research techniques and integrate research into reports and databases            </span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+more advanced research techniques and integrate research into reports and
+databases       </span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>solve problems and
-make decisions</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>solve
+problems and make decisions</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;margin-left:.5in;text-align:
-justify;text-indent:-.5in'><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn new computer
-software, as necessary</span></span></p>
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.5in'><span
+style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>learn
+new computer software, as necessary</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-size:11.0pt !msorm'><span
-style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>MINIMUM ACCEPTABLE TRAINING AND EXPERIENCE</span></u></span><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> <span
-style='font-family:"Univers \(W1\)" !msorm'>(The following statement represents
-the minimum training and experience standards which will be used to admit or
-reject applicants for tests.  Applications submitted by candidates for this
-class will be reviewed based on training and experience requirements as
-approved on </span>12/18.<span style='font-family:"Univers \(W1\)" !msorm'>)</span></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>MINIMUM ACCEPTABLE TRAINING AND EXPERIENCE</span></u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> (The following
+statement represents the minimum training and experience standards which will
+be used to admit or reject applicants for tests.  Applications submitted by
+candidates for this class will be reviewed based on training and experience
+requirements as approved on 12/18.)</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>OPTION 1:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>OPTION 1:</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>EDUCATION OR CERTIFICATION</span></u></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>EDUCATION OR CERTIFICATION</span></u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>:</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoBodyText style='line-height:115% !msorm'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif'>            Completion
-of a bachelor's degree program at an accredited college or university.</span></span></p>
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>          Completion
+of a bachelor's degree program at an accredited college or university.</span></p>
 
-<p class=MsoBodyText><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><u><span style='font-family:
-"Arial",sans-serif'>OR </span></u></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif'>OR </span></u></p>
 
-<p class=MsoBodyText style='line-height:115% !msorm'><span style='font-family:
-"Arial",sans-serif'>            C<span style='color:black'>ertification as a
-Certified Pennsylvania Evaluator or equivalent certification</span></span></p>
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>          C<span
+style='color:black'>ertification as a Certified Pennsylvania Evaluator or
+equivalent certification</span></span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>AND</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>AND</span></u></p>
 
-<h1 style='line-height:115% !msorm'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif'>EXPERIENCE</span></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-text-decoration:none'>:</span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'>EXPERIENCE</span><span
+style='font-family:"Arial",sans-serif;text-decoration:none'>:</span></h1>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-Courier !msorm'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>            One year of experience:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          One year of experience:</span></p>
 
 <p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
 letter-spacing:-.15pt'>&nbsp;</span></p>
 
 <ul style='margin-top:0in' type=disc>
- <li class=MsoNormal style='margin-left:.5in !msorm;text-indent:-.25in !msorm;
-     line-height:115% !msorm'><span style='font-family:"Arial",sans-serif'>appraising
+ <li class=MsoNormal><span style='font-family:"Arial",sans-serif'>appraising
      real property as a licensed appraiser for a professional appraisal firm,
      bank, mortgage company, or law firm</span></li>
- <li class=MsoNormal style='margin-left:.5in !msorm;text-indent:-.25in !msorm;
-     line-height:115% !msorm'><span style='font-family:"Arial",sans-serif'>assessing
+ <li class=MsoNormal><span style='font-family:"Arial",sans-serif'>assessing
      real property for a government agency</span></li>
 </ul>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-"Arial",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>OPTION 2:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>OPTION 2:</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>EDUCATION</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>EDUCATION</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-indent:.5in'><span
-style='font-family:"Arial",sans-serif'>Education equivalent to completion of
-the twelfth school grade</span></p>
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:"Arial",sans-serif'>Education
+equivalent to completion of the twelfth school grade</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='text-decoration:
-none !msorm'><u><span style='font-family:"Arial",sans-serif;color:black'>AND</span></u></span></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif;color:black'>AND</span></u></p>
 
-<h1 style='line-height:115% !msorm'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif'>EXPERIENCE</span></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-text-decoration:none'>:</span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'>EXPERIENCE</span><span
+style='font-family:"Arial",sans-serif;text-decoration:none'>:</span></h1>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-Courier !msorm'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-"Arial",sans-serif'>Four years of experience:</span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Four years of experience:</span></p>
 
 <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
 <ul style='margin-top:0in' type=disc>
- <li class=MsoNormal style='margin-left:.5in !msorm;text-indent:-.25in !msorm;
-     line-height:115% !msorm'><span style='font-family:"Arial",sans-serif'>appraising
+ <li class=MsoNormal><span style='font-family:"Arial",sans-serif'>appraising
      real property as a licensed appraiser for a professional appraisal firm,
      bank, mortgage company, or law firm</span></li>
- <li class=MsoNormal style='margin-left:.5in !msorm;text-indent:-.25in !msorm;
-     line-height:115% !msorm'><span style='font-family:"Arial",sans-serif'>assessing
+ <li class=MsoNormal><span style='font-family:"Arial",sans-serif'>assessing
      real property</span></li>
- <li class=MsoNormal style='margin-left:.5in !msorm;text-indent:-.25in !msorm;
-     line-height:115% !msorm'><span style='font-family:"Arial",sans-serif'>performing
-     work as an Assessment Aide in the Office of Property Assessment.</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial",sans-serif'>performing work
+     as an Assessment Aide in the Office of Property Assessment.</span></li>
 </ul>
 
-<p class=MsoNormal style='text-align:justify !msorm;line-height:115% !msorm;
-page-break-after:avoid !msorm;mso-style-name:"Heading 1" !msorm'><span
-style='letter-spacing:-.15pt !msorm'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif'>NOTE:
 Employees with permanent civil service status in the Assessment Aide class in
-the Office of Property Assessment with certification as a Certified Pennsylvania
-Evaluator may substitute the certification for two years of the above-mentioned
+the Office of Property Assessment with certification as a Certified
+Pennsylvania Evaluator may substitute the certification for two years of the above-mentioned
 Assessment Aide experience only.</span></p>
 
 <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-align:justify'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>OPTION </span></span><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>3<span style='font-family:"Univers \(W1\)" !msorm'>:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>OPTION 3:</span></p>
 
 <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>CERTIFICATION:</span></u></span></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif;letter-spacing:
+-.15pt'>CERTIFICATION:</span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><u><span style='font-family:
-"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-indent:.5in'><span
-style='font-family:"Arial",sans-serif'>Possession of a Real Estate Broker or
-Salesperson License in Escrow as issued by the Pennsylvania Bureau of
-Professional and Occupational Affairs - State Real Estate Commission <span
-style='color:black'>or equivalent license issued by another state.</span></span></p>
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:"Arial",sans-serif'>Possession
+of a Real Estate Broker or Salesperson License in Escrow as issued by the
+Pennsylvania Bureau of Professional and Occupational Affairs - State Real
+Estate Commission <span style='color:black'>or equivalent license issued by
+another state.</span></span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><u><span style='font-family:
-"Arial",sans-serif;color:black'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif;color:black'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
 
-<p class=MsoNormal style='line-height:115% !msorm'><u><span style='font-family:
-"Arial",sans-serif;color:black'>AND</span></u></p>
+<p class=MsoNormal><u><span style='font-family:"Arial",sans-serif;color:black'>AND</span></u></p>
 
-<h1 style='line-height:115% !msorm'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif'>EXPERIENCE:</span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'>EXPERIENCE:</span></h1>
 
-<p class=MsoNormal style='line-height:115% !msorm'><span style='font-family:
-Courier !msorm;color:windowtext !msorm'><span style='font-family:"Arial",sans-serif;
-color:black'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
 
-<p class=MsoNormal style='line-height:115% !msorm;text-indent:.5in'><span
-style='font-family:"Arial",sans-serif;color:black'>Four<span style='color:windowtext !msorm'>
-years of experience performing </span>work as a Title Registration Aide 2.</span></p>
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:"Arial",sans-serif;
+color:black'>Four years of experience performing work as a Title Registration
+Aide 2.</span></p>
 
 <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>OPTION </span></span><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>4<span
-style='font-family:"Univers \(W1\)" !msorm'>:</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>OPTION 4:</span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><u><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'><span
- style='text-decoration:none'>&nbsp;</span></span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><u><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>EDUCATION</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>EDUCATION</span></u></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><u><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'><span
- style='text-decoration:none'>&nbsp;</span></span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'><span style='text-decoration:none'>&nbsp;</span></span></u></p>
 
 <p class=MsoNormal style='text-indent:.5in'><span style='font-family:"Arial",sans-serif'>Education
 equivalent to completion of the twelfth school grade.</span></p>
 
 <p class=MsoNormal><u><span style='font-family:"Arial",sans-serif;color:black'>AND</span></u></p>
 
-<h1><span style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:
-"Arial",sans-serif'>EXPERIENCE:</span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'>EXPERIENCE:</span></h1>
 
-<p class=MsoNormal><span style='font-family:Courier !msorm'><span
-style='font-family:"Arial",sans-serif'>&nbsp;</span></span></p>
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-indent:.5in'><span style='font-family:"Arial",sans-serif'>Four
 years full time experience as a licensed Real Estate Broker or Salesperson.</span></p>
 
-<h1><span style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:
-"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'><span style='text-decoration:
+ none'>&nbsp;</span></span></h1>
 
-<h1><span style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:
-"Arial",sans-serif'>OR </span></span></h1>
+<h1><span style='font-family:"Arial",sans-serif'>OR </span></h1>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoBodyText><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif'>            Any equivalent combination
-of acceptable education and experience determined to be acceptable by the
-Office of Human Resources.</span></span></p>
+<p class=MsoBodyText><span style='font-family:"Arial",sans-serif'>          Any
+equivalent combination of acceptable education and experience determined to be
+acceptable by the Office of Human Resources.</span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><u><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>PHYSICAL AND
-MEDICAL REQUIREMENTS</span></u></span></p>
+<p class=MsoNormal style='text-align:justify'><u><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>PHYSICAL AND MEDICAL REQUIREMENTS</span></u></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>            Ability
-to physically perform the duties and to work in the environmental conditions
-required of a position in this class.</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>          Ability to physically perform the duties and
+to work in the environmental conditions required of a position in this class.</span></p>
 
 <p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
 style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'><span
  style='text-decoration:none'>&nbsp;</span></span></u></p>
 
-<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>LICENSES, REGISTRATIONS AND/OR CERTIFICATES</span></u></span></p>
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>LICENSES,
+REGISTRATIONS AND/OR CERTIFICATES</span></u></p>
 
 <p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
-style='font-family:"Arial",sans-serif;color:black'>For employees appointed to the
-Real Property Evaluator 1 class after June 1, 2010:  Possession of
-certification as a Certified Pennsylvania Evaluator within two years of
-appointment and during tenure of employment as a Real Property Evaluator 1.   </span></p>
+style='font-family:"Arial",sans-serif;color:black'>Possession of certification
+as a Certified Pennsylvania Evaluator within one year of appointment and during
+tenure of employment as a Real Property Evaluator 1.   </span></p>
 
 <p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
 style='font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
 style='font-family:"Arial",sans-serif;color:black'>Employees who do not obtain
-the certification as a Certified Pennsylvania Evaluator within two years of
+the certification as a Certified Pennsylvania Evaluator within one year of
 appointment will have their employment terminated without right to appeal,
 grieve, litigate or otherwise contest the termination. </span></p>
 
@@ -845,81 +647,60 @@ grieve, litigate or otherwise contest the termination. </span></p>
 style='font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
-style='font-family:"Arial",sans-serif;color:black'>Note: Certification as a
-Certified Pennsylvania Evaluator is not required for employees who have
-permanent civil service status in this class on or before June 1, 2010. </span></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Possession of a
+valid proper class motor vehicle operator's license as issued by the
+Commonwealth of Pennsylvania prior to appointment and during tenure of
+appointment as a Real Property Evaluator 1 if required by job assignment.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in;text-autospace:none'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>Possession of a valid proper class motor vehicle
-operator's license as issued by the Commonwealth of Pennsylvania prior to
-appointment and during tenure of appointment as a Real Property Evaluator 1 if
-required by job assignment.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
-style='font-family:"Univers \(W1\)" !msorm'><u><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>Residency Requirement</span></u></span></p>
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><u><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Residency
+Requirement</span></u></p>
 
 <p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>Employees hired after January 1, 2014 to fill a maximum
-of twenty positions in this class will not be required to establish residence
-in Philadelphia for a period of ten years after their initial appointment date.
-Such employees are eligible for an in-position promotion to the class of Real
-Property Evaluator 2 without establishing residency. Such employees are not
-eligible to compete in promotional examinations for any other class in the
-civil service until the employees have established residency in Philadelphia. </span></span></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Employees hired
+after January 1, 2014 to fill a maximum of twenty positions in this class will
+not be required to establish residence in Philadelphia for a period of ten
+years after their initial appointment date. Such employees are eligible for an
+in-position promotion to the class of Real Property Evaluator 2 without
+establishing residency. Such employees are not eligible to compete in
+promotional examinations for any other class in the civil service until the
+employees have established residency in Philadelphia. </span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><b><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>Class Established</span></b></span><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> <span
-style='font-family:"Univers \(W1\)" !msorm'>- 5/82</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><b><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>Spec. Revision: </span></b></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>CSC - 05/97; Ad. Board - 06/97</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>CSC - 5/10; Ad. Board -7/10; CSC - 5/11; Ad. Board -6/11</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><b><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'> </span></b></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>CSC - 8/11; Ad.
-Board -9/11</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>CSC -   1/14; Ad. Board -   3/14</span></span></p>
-
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>CSC </span></span><span style='font-family:"Univers \(W1\)" !msorm'><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>–</span></span><span
-style='font-family:"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'> </span></span><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>6<span style='font-family:"Univers \(W1\)" !msorm'>/15;
-Ad. Board </span><span style='font-family:"Univers \(W1\)" !msorm'>–</span>6<span
-style='font-family:"Univers \(W1\)" !msorm'>/15</span></span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+letter-spacing:-.15pt'>&nbsp;</span></p>
 
 <p class=MsoNormal align=right style='text-align:right'><b><span
-style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Latest Spec.
-Revision:</span></b></p>
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Class Established</span></b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> - 5/82</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Spec. Revision: </span></b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>CSC - 05/97; Ad.
+Board - 06/97</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC - 5/10; Ad. Board -7/10; CSC -
+5/11; Ad. Board -6/11</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'> </span></b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>CSC - 8/11; Ad.
+Board -9/11</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC -   1/14; Ad. Board -   3/14</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC – 6/15; Ad. Board –6/15</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Spec. Revision:</span></b></p>
 
 <p class=MsoNormal align=right style='text-align:right'><span style='font-family:
 "Arial",sans-serif;letter-spacing:-.15pt'>CSC – 10/18</span></p>
@@ -927,12 +708,21 @@ Revision:</span></b></p>
 <p class=MsoNormal align=right style='text-align:right'><span style='font-family:
 "Arial",sans-serif;letter-spacing:-.15pt'>Ad. Board – 12/18</span></p>
 
-<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
-"Univers \(W1\)" !msorm'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>&nbsp;</span></span></p>
+<p class=MsoNormal align=right style='text-align:right'><b><span
+style='font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Latest Spec.
+Revision:</span></b></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='font-family:"Arial",sans-serif;
-letter-spacing:-.15pt'>JJ</span></p>
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CSC – 2/25</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>Ad. Board – 3/25</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-family:
+"Arial",sans-serif;letter-spacing:-.15pt'>CP</span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
